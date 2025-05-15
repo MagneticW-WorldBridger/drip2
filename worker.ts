@@ -209,19 +209,21 @@ class StreamManager {
 const streamManager = new StreamManager();
 
 // Función para llamar a GHL y actualizar contacto
-async function updateContact(contactId: string, locationId: string, customFieldId: string) {
+async function updateContact(contactId: string, locationId: string, customFieldId: string, apiKey: string) {
   console.log(`🔔 Actualizando contacto ${contactId}`);
+  
   const res = await fetch(
-    `https://gh-connector.vercel.app/proxy/contacts/${contactId}`,
+    `https://rest.gohighlevel.com/v1/contacts/${contactId}`,
     {
       method: 'PUT',
       headers: {
-        'Authorization': process.env.GHL_API_KEY || '',
-        'LocationId': locationId,
+        'Authorization': `Bearer ${apiKey}`,  // Usar la API key específica del contacto
         'Content-Type': 'application/json'
       },
       body: JSON.stringify({
-        customFields: [{ id: customFieldId, field_value: 'YES' }]
+        customField: {
+          [customFieldId]: "YES"
+        }
       })
     }
   );
@@ -263,9 +265,10 @@ async function processStreamMessage(
     const locationId = messageData.locationId;
     const workflowId = messageData.workflowId || 'noworkflow';
     const customFieldId = messageData.customFieldId;
+    const apiKey = messageData.apiKey;  // Extraer API key del mensaje
     
-    // Actualizar contacto en GHL
-    await updateContact(contactId, locationId, customFieldId);
+    // Actualizar contacto en GHL con la API key específica
+    await updateContact(contactId, locationId, customFieldId, apiKey);
     
     // Eliminar de la tabla en PostgreSQL
     await removeFromQueue(contactId, locationId, workflowId);

@@ -18,7 +18,7 @@ async function processReadyContacts() {
   try {
     // Buscar contactos cuyo run_at ya ha pasado
     const result = await client.query(
-      `SELECT id, contact_id, location_id, workflow_id, custom_field_id, run_at
+      `SELECT id, contact_id, location_id, workflow_id, custom_field_id, run_at, api_key
        FROM sequential_queue
        WHERE run_at <= NOW()
        LIMIT 50`  // Procesar en lotes para evitar sobrecarga
@@ -38,6 +38,7 @@ async function processReadyContacts() {
             locationId: row.location_id,
             workflowId: row.workflow_id || 'noworkflow',
             customFieldId: row.custom_field_id,
+            apiKey: row.api_key,  // Incluir API key
             runAt: row.run_at.toISOString(),
             enqueuedAt: new Date().toISOString()
           };

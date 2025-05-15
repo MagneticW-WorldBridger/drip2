@@ -20,25 +20,27 @@ function locationIdToBigInt(locationId: string): bigint {
 
 function normalizePayload(body: any): any {
   // FORMATO 1: Viene con "extras" y "meta.key" - Custom Action de GHL
-  if (body.extras && body.meta?.key === "humanizer_drip") {
+  if (body.extras && (body.meta?.key === "humanizer_drip" || body.meta?.key === "humanizer_v1")) {
     // FORMATO 1.1: Nuevo formato mixto (data + extras) - Con isMarketplaceAction
     if (body.data && body.isMarketplaceAction) {
-      // Extraer TimeFrame de data, y el resto de extras
+      // Extraer TimeFrame y API key de data, y el resto de extras
       return {
         contact_id: body.extras.contactId,
         location: { id: body.extras.locationId },
         workflow: { id: body.extras.workflowId || 'noworkflow' },
-        customData: { TimeFrame: body.data.TimeFrame }
+        customData: { TimeFrame: body.data.TimeFrame },
+        api_key: body.data.apiKey  // Extraer API key de data
       };
     }
     
     // FORMATO 1.2: Formato con todo en extras (original de Custom Action)
-    const { contactId, locationId, workflowId, TimeFrame } = body.extras;
+    const { contactId, locationId, workflowId, TimeFrame, apiKey } = body.extras;
     return {
       contact_id: contactId,
       location: { id: locationId },
       workflow: { id: workflowId || 'noworkflow' },
-      customData: { TimeFrame }
+      customData: { TimeFrame },
+      api_key: apiKey || body.data?.apiKey  // Buscar en extras o data
     };
   }
   
@@ -60,9 +62,10 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     const locationId = normalizedBody?.location?.id as string;
     const workflowId = normalizedBody?.workflow?.id as string || 'noworkflow';
     const timeframe = normalizedBody?.customData?.TimeFrame as string;
+    const apiKey = normalizedBody?.api_key as string;  // Capturar API key del payload
 
-    if (!contactId || !locationId || !timeframe) {
-      return res.status(400).json({ error: 'Faltan datos (contactId, locationId o TimeFrame)' });
+    if (!contactId || !locationId || !timeframe || !apiKey) {
+      return res.status(400).json({ error: 'Faltan datos (contactId, locationId, TimeFrame o apiKey)' });
     }
 
     // Parsear "min to max"
@@ -93,26 +96,36 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
       }
 
       if (!customFieldId) {
-        // Buscar en GHL
+        // Buscar en GHL usando la API key del contacto
         const ghRes = await fetch(
-          `https://gh-connector.vercel.app/proxy/locations/${locationId}/customFields`,
+          `https://rest.gohighlevel.com/v1/custom-fields/`,
           {
             headers: {
-              Authorization: process.env.GHL_API_KEY || '',
-              LocationId: locationId,
+              Authorization: `Bearer ${apiKey}`,  // Usar la API key del contacto
             },
           }
         );
+        
+        if (!ghRes.ok) {
+          await client.query('ROLLBACK');
+          return res.status(500).json({ 
+            error: 'Error al obtener campos personalizados de GHL', 
+            details: await ghRes.text() 
+          });
+        }
+        
         const fieldsPayload = await ghRes.json();
-        const allFields = Array.isArray(fieldsPayload)
-          ? fieldsPayload
-          : fieldsPayload.customFields;
-        const timerField = allFields.find((f: any) => f.name?.toLowerCase() === 'timerdone');
+        const allFields = fieldsPayload.customFields || []; // La API v1 devuelve { customFields: [...] }
+        const timerField = allFields.find((f: any) => 
+          f.name?.toLowerCase() === 'timerdone' || 
+          f.name?.toLowerCase() === 'timer done'
+        );
+        
         if (!timerField) {
           await client.query('ROLLBACK');
           return res.status(500).json({ error: 'Custom field "timerdone" no encontrado en GHL' });
         }
-
+        
         customFieldId = timerField.id;
 
         await client.query(
@@ -142,12 +155,12 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
       const delaySeconds = Math.floor(Math.random() * (max - min + 1)) + Math.floor(min);
       const newRunAt = new Date(lastRunAt.getTime() + delaySeconds * 1000);
 
-      // 🔥 Insertar en sequential_queue con workflowId
+      // 🔥 Insertar en sequential_queue con workflowId y apiKey
       await client.query(
         `INSERT INTO sequential_queue
-          (contact_id, location_id, workflow_id, delay_seconds, custom_field_id, run_at)
-         VALUES ($1, $2, $3, $4, $5, $6)`,
-        [contactId, locationId, workflowId, delaySeconds, customFieldId, newRunAt]
+          (contact_id, location_id, workflow_id, delay_seconds, custom_field_id, run_at, api_key)
+         VALUES ($1, $2, $3, $4, $5, $6, $7)`,
+        [contactId, locationId, workflowId, delaySeconds, customFieldId, newRunAt, apiKey]
       );
 
       await client.query('COMMIT');
