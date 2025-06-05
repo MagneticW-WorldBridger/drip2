@@ -93,9 +93,9 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
 
       if (fieldRes.rows.length > 0) {
         customFieldId = fieldRes.rows[0].timerdone_custom_field_id;
-      }
-
-      if (!customFieldId) {
+        console.log(`✅ Custom field ID encontrado en DB para location ${locationId}: ${customFieldId}`);
+      } else {
+        console.log(`⚠️ No se encontró custom field ID en DB para location ${locationId}, consultando GHL...`);
         // Buscar en GHL usando la API key del contacto
         const ghRes = await fetch(
           `https://rest.gohighlevel.com/v1/custom-fields/`,
