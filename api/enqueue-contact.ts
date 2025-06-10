@@ -1,6 +1,7 @@
 import type { VercelRequest, VercelResponse } from '@vercel/node';
 import dotenv from 'dotenv';
 import { Pool } from 'pg';
+import { DateTime } from 'luxon';
 dotenv.config();
 
 // Conexión a PostgreSQL usando DATABASE_URL en .env TEST(NOT TEST BUT JUST FORCING A GIT CHANGE SO I CAN PUSH
@@ -8,6 +9,93 @@ const pool = new Pool({
   connectionString: process.env.DATABASE_URL,
   ssl: { rejectUnauthorized: false },
 });
+
+// 🌍 FUNCIÓN PARA OBTENER TIMEZONE (CON CACHE EN DB)
+async function getLocationTimezone(locationId: string, apiKey: string, client: any): Promise<string> {
+  // 🔥 STEP 1: Buscar en cache DB primero
+  const cachedResult = await client.query(
+    'SELECT timezone FROM location_custom_fields WHERE location_id = $1 LIMIT 1',
+    [locationId]
+  );
+
+  if (cachedResult.rows.length > 0 && cachedResult.rows[0].timezone) {
+    return cachedResult.rows[0].timezone;
+  }
+
+  // 🔥 STEP 2: Si no está en cache, fetch DIRECTO de GHL API v1 (igual que custom fields)
+  console.log(`⚠️ Timezone no encontrado en cache para location ${locationId}, consultando GHL API v1...`);
+  
+  try {
+    const response = await fetch(
+      `https://rest.gohighlevel.com/v1/locations/${locationId}`,
+      {
+        headers: {
+          'Authorization': `Bearer ${apiKey}`,
+          'Content-Type': 'application/json'
+        }
+      }
+    );
+
+    if (!response.ok) {
+      throw new Error(`API response not ok: ${response.status}`);
+    }
+
+    const data = await response.json();
+    const timezone = data.timezone || data.business?.timezone;
+
+    if (!timezone) {
+      throw new Error('No timezone found in location data');
+    }
+
+    // 🔥 STEP 3: Guardar en cache para próxima vez
+    await client.query(
+      'UPDATE location_custom_fields SET timezone = $1 WHERE location_id = $2',
+      [timezone, locationId]
+    );
+
+    console.log(`✅ Timezone ${timezone} obtenido y guardado en cache para location ${locationId}`);
+    return timezone;
+
+  } catch (error) {
+    console.error(`❌ Error obteniendo timezone para location ${locationId}:`, error);
+    return 'America/New_York'; // Fallback conservative
+  }
+}
+
+// 🌍 BUSINESS HOURS ADJUSTMENT (PRESERVA SEQUENTIAL ORDER - FIX DEFINITIVO)
+function smartBusinessHoursAdjustment(scheduledTime: Date, timezone: string): Date {
+  const dt = DateTime.fromJSDate(scheduledTime).setZone(timezone);
+  
+  const BUSINESS_START = 8;  // 8 AM
+  const BUSINESS_END = 20;   // 8 PM
+  
+  // ✅ SI ESTÁ EN BUSINESS HOURS - NO TOCAR NADA (PRESERVAR SEQUENTIAL)
+  if (dt.hour >= BUSINESS_START && dt.hour < BUSINESS_END && dt.weekday <= 5) {
+    return scheduledTime; // PRESERVAR TIMESTAMP ORIGINAL
+  }
+  
+  let adjustedDt: DateTime;
+  
+  if (dt.weekday > 5) {
+    // Weekend - mover a lunes 8 AM preservando hora/minuto/segundo exactos
+    const daysToMonday = dt.weekday === 6 ? 2 : 1;  // Sábado o domingo
+    adjustedDt = dt.plus({ days: daysToMonday }).set({ 
+      hour: BUSINESS_START, minute: dt.minute, second: dt.second, millisecond: dt.millisecond
+    });
+  } else if (dt.hour < BUSINESS_START) {
+    // Antes de 8 AM - SOLO cambiar la hora a 8, MANTENER minutos/segundos EXACTOS
+    // Esto preserva el spacing de 60-300 segundos entre contacts
+    adjustedDt = dt.set({ hour: BUSINESS_START });
+  } else {
+    // Después de 8 PM - mover al siguiente día 8 AM + MANTENER minutos/segundos exactos
+    adjustedDt = dt.plus({ days: 1 }).set({ 
+      hour: BUSINESS_START, minute: dt.minute, second: dt.second, millisecond: dt.millisecond
+    });
+  }
+  
+  // Convertir de vuelta a UTC JavaScript Date
+  return adjustedDt.toUTC().toJSDate();
+}
 
 // Función para convertir locationId a BigInt
 function locationIdToBigInt(locationId: string): bigint {
@@ -151,16 +239,27 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
         lastRunAt = now;
       }
 
-      // 🔥 Elegir un delay aleatorio
+      // 🔥 Elegir un delay aleatorio (ALGORITMO ORIGINAL - NO CAMBIA)
       const delaySeconds = Math.floor(Math.random() * (max - min + 1)) + Math.floor(min);
       const newRunAt = new Date(lastRunAt.getTime() + delaySeconds * 1000);
 
-      // 🔥 Insertar en sequential_queue con workflowId y apiKey
+      // 🌍 BUSINESS HOURS SAFEGUARD - IMPLEMENTACIÓN FINAL CON API REAL Y LUXON
+      const locationTimezone = await getLocationTimezone(locationId, apiKey, client);
+      const adjustedRunAt = smartBusinessHoursAdjustment(newRunAt, locationTimezone);
+
+      // Log only if adjustment occurred
+      if (adjustedRunAt.getTime() !== newRunAt.getTime()) {
+        console.log(`⏰ Business hours adjustment for ${locationId} (${locationTimezone}):`);
+        console.log(`   Original: ${newRunAt.toISOString()}`);
+        console.log(`   Adjusted: ${adjustedRunAt.toISOString()}`);
+      }
+
+      // 🔥 Insertar en sequential_queue con workflowId y apiKey (usando adjustedRunAt)
       await client.query(
         `INSERT INTO sequential_queue
           (contact_id, location_id, workflow_id, delay_seconds, custom_field_id, run_at, api_key)
          VALUES ($1, $2, $3, $4, $5, $6, $7)`,
-        [contactId, locationId, workflowId, delaySeconds, customFieldId, newRunAt, apiKey]
+        [contactId, locationId, workflowId, delaySeconds, customFieldId, adjustedRunAt, apiKey]
       );
 
       await client.query('COMMIT');
@@ -168,7 +267,9 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
       // defer publishing to the scheduler; handler only writes to Postgres
       return res.status(200).json({
         success: true,
-        runAt: newRunAt.toISOString(),
+        runAt: adjustedRunAt.toISOString(),
+        timezone: locationTimezone,
+        adjusted: adjustedRunAt.getTime() !== newRunAt.getTime()
       });
     } catch (error) {
       await client.query('ROLLBACK');
