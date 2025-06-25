@@ -10,6 +10,83 @@ const pool = new Pool({
 });
 
 /**
+ * Reschedules expired jobs to maintain proper sequential spacing
+ * This handles the backlog that accumulates when the system is down
+ */
+async function rescheduleExpiredJobs() {
+  const client = await pool.connect();
+  try {
+    // Find all expired jobs grouped by location+workflow
+    const expiredJobsQuery = `
+      SELECT location_id, workflow_id, COUNT(*) as expired_count,
+             MIN(run_at) as earliest_expired,
+             MAX(run_at) as latest_expired
+      FROM sequential_queue 
+      WHERE run_at <= NOW() - INTERVAL '1 minute'  -- Only truly expired jobs (not just ready)
+      GROUP BY location_id, workflow_id
+      HAVING COUNT(*) > 1  -- Only reschedule if there are multiple expired jobs (backlog scenario)
+      ORDER BY location_id, workflow_id
+    `;
+    
+    const expiredGroups = await client.query(expiredJobsQuery);
+    
+    if (expiredGroups.rows.length === 0) {
+      return; // No expired backlogs to reschedule
+    }
+    
+    console.log(`🔄 Found ${expiredGroups.rows.length} location+workflow groups with expired job backlogs`);
+    
+    for (const group of expiredGroups.rows) {
+      const { location_id, workflow_id, expired_count } = group;
+      
+      console.log(`⏰ Rescheduling ${expired_count} expired jobs for ${location_id}+${workflow_id}`);
+      
+             // Get all expired jobs for this location+workflow, ordered by original run_at
+       const jobsToReschedule = await client.query(
+         `SELECT id, contact_id, delay_seconds, run_at
+          FROM sequential_queue 
+          WHERE location_id = $1 AND workflow_id = $2 AND run_at <= NOW() - INTERVAL '1 minute'
+          ORDER BY run_at ASC`,
+         [location_id, workflow_id]
+       );
+      
+      // Calculate new run_at times with proper spacing
+      const now = new Date();
+      let currentRunAt = now;
+      
+      for (let i = 0; i < jobsToReschedule.rows.length; i++) {
+        const job = jobsToReschedule.rows[i];
+        const originalDelaySeconds = job.delay_seconds;
+        
+        // First job starts now, subsequent jobs maintain their original spacing
+        if (i === 0) {
+          currentRunAt = now;
+        } else {
+          // Add the original delay from the previous job
+          const previousJob = jobsToReschedule.rows[i - 1];
+          currentRunAt = new Date(currentRunAt.getTime() + previousJob.delay_seconds * 1000);
+        }
+        
+        // Update the job's run_at time
+        await client.query(
+          'UPDATE sequential_queue SET run_at = $1 WHERE id = $2',
+          [currentRunAt, job.id]
+        );
+        
+        console.log(`  📅 Job ${job.contact_id}: ${job.run_at.toISOString()} → ${currentRunAt.toISOString()}`);
+      }
+      
+      console.log(`✅ Rescheduled ${expired_count} jobs for ${location_id}+${workflow_id}`);
+    }
+    
+  } catch (error) {
+    console.error('❌ Error rescheduling expired jobs:', error);
+  } finally {
+    client.release();
+  }
+}
+
+/**
  * Busca contactos en PostgreSQL cuyo tiempo de ejecución ya ha llegado
  * y los publica en el stream correspondiente
  */
@@ -66,14 +143,23 @@ async function processReadyContacts() {
 // Main scheduler loop: process ready contacts from Postgres based on run_at
 async function runSchedulerLoop() {
   console.log('⏱️ Scheduler loop started...');
+  
+  // Run expired job rescheduling once on startup
+  console.log('🔄 Checking for expired jobs to reschedule...');
+  await rescheduleExpiredJobs();
+  
   while (true) {
     try {
+      // First, handle any new expired job backlogs (in case system was down again)
+      await rescheduleExpiredJobs();
+      
+      // Then process normally ready contacts
       await processReadyContacts();
     } catch (error) {
       console.error('❌ Error in scheduler loop:', error);
     }
-    // Wait 1 second before next iteration
-    await new Promise(resolve => setTimeout(resolve, 1000));
+    // Wait 5 seconds before next iteration (more frequent to handle backlogs better)
+    await new Promise(resolve => setTimeout(resolve, 5000));
   }
 }
 

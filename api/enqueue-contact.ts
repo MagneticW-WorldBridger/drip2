@@ -69,22 +69,15 @@ function smartBusinessHoursAdjustment(scheduledTime: Date, timezone: string): Da
   const BUSINESS_START = 8;  // 8 AM
   const BUSINESS_END = 20;   // 8 PM
   
-  // ✅ SI ESTÁ EN BUSINESS HOURS - NO TOCAR NADA (PRESERVAR SEQUENTIAL)
-  if (dt.hour >= BUSINESS_START && dt.hour < BUSINESS_END && dt.weekday <= 5) {
-    return scheduledTime; // PRESERVAR TIMESTAMP ORIGINAL
+  // ✅ SI ESTÁ EN BUSINESS HOURS (8AM-8PM ANY DAY) - NO TOCAR NADA (PRESERVAR SEQUENTIAL)
+  if (dt.hour >= BUSINESS_START && dt.hour < BUSINESS_END) {
+    return scheduledTime; // PRESERVAR TIMESTAMP ORIGINAL - NOW WORKS 7 DAYS A WEEK
   }
   
   let adjustedDt: DateTime;
   
-  if (dt.weekday > 5) {
-    // Weekend - mover a lunes 8 AM preservando hora/minuto/segundo exactos
-    const daysToMonday = dt.weekday === 6 ? 2 : 1;  // Sábado o domingo
-    adjustedDt = dt.plus({ days: daysToMonday }).set({ 
-      hour: BUSINESS_START, minute: dt.minute, second: dt.second, millisecond: dt.millisecond
-    });
-  } else if (dt.hour < BUSINESS_START) {
+  if (dt.hour < BUSINESS_START) {
     // Antes de 8 AM - SOLO cambiar la hora a 8, MANTENER minutos/segundos EXACTOS
-    // Esto preserva el spacing de 60-300 segundos entre contacts
     adjustedDt = dt.set({ hour: BUSINESS_START });
   } else {
     // Después de 8 PM - mover al siguiente día 8 AM + MANTENER minutos/segundos exactos
@@ -107,8 +100,32 @@ function locationIdToBigInt(locationId: string): bigint {
 }
 
 function normalizePayload(body: any): any {
+  console.log('🔍 DEBUGGING normalizePayload - body keys:', Object.keys(body));
+  console.log('🔍 body.contact_id:', body.contact_id);
+  console.log('🔍 body.customData?.api_key:', body.customData?.api_key);
+  console.log('🔍 body.location?.id:', body.location?.id);
+  
+  // FORMATO 3: Legacy payload con muchos campos y datos clave anidados
+  if (body.contact_id && body.customData?.api_key && body.location?.id) {
+    console.log('✅ Legacy payload detectado. Normalizando a una estructura limpia...');
+    const result = {
+      contact_id: body.contact_id,
+      location: body.location, // el objeto de location está bien como está
+      workflow: body.workflow || { id: 'noworkflow' }, // asegurar que workflow exista
+      customData: { TimeFrame: body.customData.TimeFrame }, // aislar solo el TimeFrame
+      api_key: body.customData.api_key, // subir api_key al nivel superior
+    };
+    console.log('🔍 Legacy normalized result:', JSON.stringify(result, null, 2));
+    return result;
+  }
+
+  console.log('🔍 Checking for extras format...');
+  console.log('🔍 body.extras:', !!body.extras);
+  console.log('🔍 body.meta?.key:', body.meta?.key);
+
   // FORMATO 1: Viene con "extras" y "meta.key" - Custom Action de GHL
   if (body.extras && (body.meta?.key === "humanizer_drip" || body.meta?.key === "humanizer_v1")) {
+    console.log('Payload de GHL Custom Action detectado. Normalizando...');
     // FORMATO 1.1: Nuevo formato mixto (data + extras) - Con isMarketplaceAction
     if (body.data && body.isMarketplaceAction) {
       // Extraer TimeFrame y API key de data, y el resto de extras
@@ -117,7 +134,7 @@ function normalizePayload(body: any): any {
         location: { id: body.extras.locationId },
         workflow: { id: body.extras.workflowId || 'noworkflow' },
         customData: { TimeFrame: body.data.TimeFrame },
-        api_key: body.data.apiKey  // Extraer API key de data
+        api_key: body.data.apiKey, // Extraer API key de data
       };
     }
     
@@ -128,11 +145,13 @@ function normalizePayload(body: any): any {
       location: { id: locationId },
       workflow: { id: workflowId || 'noworkflow' },
       customData: { TimeFrame },
-      api_key: apiKey || body.data?.apiKey  // Buscar en extras o data
+      api_key: apiKey || body.data?.apiKey, // Buscar en extras o data
     };
   }
   
-  // FORMATO 2: Formato original directo
+  // FORMATO 2: Formato original directo (no necesita cambios)
+  console.log('🔍 Payload directo detectado. No se necesita normalización.');
+  console.log('🔍 Direct payload result keys:', Object.keys(body));
   return body;
 }
 
@@ -145,14 +164,24 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     console.log('🧠 Webhook recibido:\n', JSON.stringify(req.body, null, 2));
 
     const normalizedBody = normalizePayload(req.body);
+    
+    console.log('🔥 AFTER NORMALIZATION - normalizedBody:', JSON.stringify(normalizedBody, null, 2));
 
     const contactId = normalizedBody.contact_id as string;
     const locationId = normalizedBody?.location?.id as string;
     const workflowId = normalizedBody?.workflow?.id as string || 'noworkflow';
     const timeframe = normalizedBody?.customData?.TimeFrame as string;
-    const apiKey = normalizedBody?.api_key as string;  // Capturar API key del payload
+    const apiKey = normalizedBody?.api_key as string;
+
+    console.log('🔥 EXTRACTED VALUES:');
+    console.log('  contactId:', contactId);
+    console.log('  locationId:', locationId);
+    console.log('  workflowId:', workflowId);
+    console.log('  timeframe:', timeframe);
+    console.log('  apiKey:', apiKey ? 'EXISTS' : 'MISSING');
 
     if (!contactId || !locationId || !timeframe || !apiKey) {
+      console.log('❌ MISSING DATA ERROR - returning 400');
       return res.status(400).json({ error: 'Faltan datos (contactId, locationId, TimeFrame o apiKey)' });
     }
 
