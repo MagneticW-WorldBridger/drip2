@@ -2,7 +2,75 @@ import { redisClient, createConsumerGroup, getStreamName } from './api/queue.js'
 import { Pool } from 'pg';
 import dotenv from 'dotenv';
 import * as crypto from 'crypto';
+import nodemailer from 'nodemailer';
+
 dotenv.config();
+
+// 🚨 SISTEMA DE ALERTAS PARA ERRORES 401
+const errorTracker = new Map<string, { count: number; lastReset: number }>();
+const ALERT_THRESHOLD = 5; // 5 errores 401 del mismo location
+const RESET_INTERVAL = 10 * 60 * 1000; // 10 minutos
+
+// Configurar nodemailer (usar Gmail como ejemplo)
+const transporter = nodemailer.createTransport({
+  service: 'gmail',
+  auth: {
+    user: process.env.ALERT_EMAIL_USER, // tu-email@gmail.com
+    pass: process.env.ALERT_EMAIL_PASS  // tu-app-password
+  }
+});
+
+async function sendAlert(locationId: string, errorCount: number) {
+  try {
+    const mailOptions = {
+      from: process.env.ALERT_EMAIL_USER,
+      to: process.env.ADMIN_EMAILS, // 'admin1@company.com,admin2@company.com'
+      subject: `🚨 ALERTA: API Key Inválida - Location ${locationId}`,
+      html: `
+        <h2>🚨 ALERTA CRÍTICA - GHL DRIP SYSTEM</h2>
+        <p><strong>Location ID:</strong> ${locationId}</p>
+        <p><strong>Errores 401 detectados:</strong> ${errorCount}</p>
+        <p><strong>Causa:</strong> API Key inválida o expirada</p>
+        <p><strong>Acción requerida:</strong> Verificar y actualizar API Key para este location</p>
+        <p><strong>Timestamp:</strong> ${new Date().toISOString()}</p>
+        <hr>
+        <p><small>Este mensaje fue enviado automáticamente por el sistema de monitoreo.</small></p>
+      `
+    };
+
+    await transporter.sendMail(mailOptions);
+    console.log(`📧 Alerta enviada para location ${locationId}`);
+  } catch (error) {
+    console.error(`❌ Error enviando alerta:`, error);
+  }
+}
+
+function trackError(locationId: string) {
+  const now = Date.now();
+  const key = locationId;
+  
+  if (!errorTracker.has(key)) {
+    errorTracker.set(key, { count: 0, lastReset: now });
+  }
+  
+  const tracker = errorTracker.get(key)!;
+  
+  // Reset contador si han pasado 10 minutos
+  if (now - tracker.lastReset > RESET_INTERVAL) {
+    tracker.count = 0;
+    tracker.lastReset = now;
+  }
+  
+  tracker.count++;
+  
+  // Enviar alerta si se alcanza el threshold
+  if (tracker.count === ALERT_THRESHOLD) {
+    sendAlert(locationId, tracker.count);
+    // Reset para evitar spam de emails
+    tracker.count = 0;
+    tracker.lastReset = now;
+  }
+}
 
 // Generamos un ID único para este worker
 const WORKER_ID = process.env.WORKER_ID || `worker-${crypto.randomBytes(4).toString('hex')}`;
@@ -257,6 +325,8 @@ async function processStreamMessage(
   messageId: string, 
   messageData: Record<string, string>
 ) {
+  let shouldAck = true; // SIEMPRE hacer ACK por defecto
+  
   try {
     console.log(`⚙️ Procesando mensaje ${messageId} del stream ${streamName}`);
     
@@ -267,24 +337,60 @@ async function processStreamMessage(
     const customFieldId = messageData.customFieldId;
     const apiKey = messageData.apiKey;  // Extraer API key del mensaje
     
-    // Actualizar contacto en GHL con la API key específica
-    await updateContact(contactId, locationId, customFieldId, apiKey);
+    // Validar datos requeridos
+    if (!contactId || !locationId || !customFieldId || !apiKey) {
+      console.error(`❌ Datos incompletos en mensaje ${messageId}:`, messageData);
+      // ACK mensaje malformado para evitar reprocessing infinito
+      await redisClient.xack(streamName, CONSUMER_GROUP, messageId);
+      await redisClient.xdel(streamName, messageId);
+      return;
+    }
     
-    // Eliminar de la tabla en PostgreSQL
-    await removeFromQueue(contactId, locationId, workflowId);
+    console.log(`🔔 Actualizando contacto ${contactId}`);
     
-    // Confirmar que el mensaje ha sido procesado
-    await redisClient.xack(streamName, CONSUMER_GROUP, messageId);
+    // Intentar actualizar el contacto
+    try {
+      await updateContact(contactId, locationId, customFieldId, apiKey);
+      console.log(`✅ Contacto ${contactId} actualizado`);
+    } catch (updateError: any) {
+      console.error(`❌ Error actualizando contacto ${contactId}:`, updateError.message);
+      
+      // CRÍTICO: Si es error 401, hacer ACK para evitar PEL overflow
+      if (updateError.message.includes('401') || updateError.message.includes('Api key is invalid')) {
+        console.error(`🚨 API KEY INVÁLIDA para location ${locationId} - HACIENDO ACK para evitar PEL overflow`);
+        
+        // 🚨 SISTEMA DE ALERTAS: Trackear error 401
+        trackError(locationId);
+        
+        // Continuar con ACK y eliminación
+      } else {
+        // Para otros errores, también hacer ACK para evitar loops infinitos
+        console.error(`🚨 Error no-401 - HACIENDO ACK para evitar loops infinitos`);
+      }
+    }
     
-    // Borrar el mensaje procesado para evitar resurrección
-    await redisClient.xdel(streamName, messageId);
+    // Intentar remover de PostgreSQL
+    try {
+      await removeFromQueue(contactId, locationId, workflowId);
+      console.log(`🗑️ Contacto ${contactId} borrado de sequential_queue`);
+    } catch (removeError: any) {
+      console.error(`❌ Error removiendo de queue:`, removeError.message);
+      // Continuar con ACK incluso si falla la remoción
+    }
     
-    console.log(`✅ Mensaje ${messageId} procesado correctamente`);
-    return true;
-  } catch (error) {
+  } catch (error: any) {
     console.error(`❌ Error procesando mensaje ${messageId}:`, error);
-    // No hacemos XACK para que otro worker pueda intentarlo después
-    return false;
+    // SIEMPRE hacer ACK incluso en errores inesperados
+  }
+  
+  // CRÍTICO: SIEMPRE hacer ACK y DELETE para evitar PEL overflow
+  try {
+    await redisClient.xack(streamName, CONSUMER_GROUP, messageId);
+    await redisClient.xdel(streamName, messageId);
+    console.log(`✅ Mensaje ${messageId} procesado correctamente`);
+  } catch (ackError: any) {
+    console.error(`❌ Error haciendo ACK del mensaje ${messageId}:`, ackError);
+    // Incluso si falla el ACK, loggear para debugging
   }
 }
 
