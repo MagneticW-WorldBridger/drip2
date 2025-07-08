@@ -77,12 +77,12 @@ function smartBusinessHoursAdjustment(scheduledTime: Date, timezone: string): Da
   let adjustedDt: DateTime;
   
   if (dt.hour < BUSINESS_START) {
-    // Antes de 8 AM - SOLO cambiar la hora a 8, MANTENER minutos/segundos EXACTOS
-    adjustedDt = dt.set({ hour: BUSINESS_START });
+    // Antes de 8 AM - SOLO cambiar la hora a 8:00:00.000 EXACTO
+    adjustedDt = dt.set({ hour: BUSINESS_START, minute: 0, second: 0, millisecond: 0 });
   } else {
-    // Después de 8 PM - mover al siguiente día 8 AM + MANTENER minutos/segundos exactos
+    // Después de 8 PM - mover al siguiente día 8:00:00.000 AM EXACTO (FIX CRÍTICO)
     adjustedDt = dt.plus({ days: 1 }).set({ 
-      hour: BUSINESS_START, minute: dt.minute, second: dt.second, millisecond: dt.millisecond
+      hour: BUSINESS_START, minute: 0, second: 0, millisecond: 0
     });
   }
   
