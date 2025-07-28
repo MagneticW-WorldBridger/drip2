@@ -166,7 +166,7 @@ class StreamManager {
             'GROUP', CONSUMER_GROUP, WORKER_ID, 
             'COUNT', 1, // Procesar de uno en uno para garantizar orden
             'BLOCK', 2000, // Bloquear 2 segundos, luego comprobar estado
-            'STREAMS', streamName, '>'
+            'STREAMS', streamName, '0' // Usar '0' para PEL en lugar de '>' para evitar duplicados
           );
           
           // Si hay mensajes nuevos, procesarlos
@@ -181,6 +181,14 @@ class StreamManager {
               const messageData: Record<string, string> = {};
               for (let i = 0; i < fields.length; i += 2) {
                 messageData[fields[i]] = fields[i + 1];
+              }
+              
+              // HACER ACK INMEDIATAMENTE para evitar duplicados
+              try {
+                await redisClient.xack(streamName, CONSUMER_GROUP, messageId);
+              } catch (ackError) {
+                console.error(`❌ Error haciendo ACK inmediato:`, ackError);
+                continue; // Saltar este mensaje si falla el ACK
               }
               
               // Procesar mensaje
@@ -346,11 +354,9 @@ async function processStreamMessage(
       return;
     }
     
-    console.log(`🔔 Actualizando contacto ${contactId}`);
-    
     // Intentar actualizar el contacto
     try {
-      await updateContact(contactId, locationId, customFieldId, apiKey);
+    await updateContact(contactId, locationId, customFieldId, apiKey);
       console.log(`✅ Contacto ${contactId} actualizado`);
     } catch (updateError: any) {
       console.error(`❌ Error actualizando contacto ${contactId}:`, updateError.message);
@@ -371,7 +377,7 @@ async function processStreamMessage(
     
     // Intentar remover de PostgreSQL
     try {
-      await removeFromQueue(contactId, locationId, workflowId);
+    await removeFromQueue(contactId, locationId, workflowId);
       console.log(`🗑️ Contacto ${contactId} borrado de sequential_queue`);
     } catch (removeError: any) {
       console.error(`❌ Error removiendo de queue:`, removeError.message);
@@ -383,15 +389,15 @@ async function processStreamMessage(
     // SIEMPRE hacer ACK incluso en errores inesperados
   }
   
-  // CRÍTICO: SIEMPRE hacer ACK y DELETE para evitar PEL overflow
-  try {
-    await redisClient.xack(streamName, CONSUMER_GROUP, messageId);
-    await redisClient.xdel(streamName, messageId);
-    console.log(`✅ Mensaje ${messageId} procesado correctamente`);
-  } catch (ackError: any) {
-    console.error(`❌ Error haciendo ACK del mensaje ${messageId}:`, ackError);
-    // Incluso si falla el ACK, loggear para debugging
-  }
+  // CRÍTICO: Ya no necesitamos ACK aquí porque se hace inmediatamente después de leer
+  // try {
+  //   await redisClient.xack(streamName, CONSUMER_GROUP, messageId);
+  //   await redisClient.xdel(streamName, messageId);
+  //   console.log(`✅ Mensaje ${messageId} procesado correctamente`);
+  // } catch (ackError: any) {
+  //   console.error(`❌ Error haciendo ACK del mensaje ${messageId}:`, ackError);
+  //   // Incluso si falla el ACK, loggear para debugging
+  // }
 }
 
 // Iniciar bucle de descubrimiento de streams

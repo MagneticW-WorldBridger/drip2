@@ -1,0 +1,620 @@
+🔄 Procesando 1 contactos listos desde PostgreSQL
+🚀 Contacto NlV4awnFDAkT09dlFpQt publicado en stream stream:location:fgK4QNPrkW9TsnxdOLjN:workflow:b1961631-4fd8-4e89-beaa-1033bd13641b con ID 1752952588503-0
+🗑️ Contacto NlV4awnFDAkT09dlFpQt eliminado de sequential_queue
+🔄 Procesando 1 contactos listos desde PostgreSQL
+🚀 Contacto YIZBX7gyLevGlIOL0Ift publicado en stream stream:location:6x2rKjW2FynYffwMABlm:workflow:a70485d8-64aa-44f1-b869-42ef66a5eae5 con ID 1752952592531-0
+🗑️ Contacto YIZBX7gyLevGlIOL0Ift eliminado de sequential_queue
+🔄 Procesando 1 contactos listos desde PostgreSQL
+🚀 Contacto KVJY0ffsEDV2NkxkQ6Da publicado en stream stream:location:6d6IGXqPBG4y9znTo3Py:workflow:f64beb40-4c9c-47d1-a789-956da0c42247 con ID 1752952606609-0
+🗑️ Contacto KVJY0ffsEDV2NkxkQ6Da eliminado de sequential_queue
+🔄 Procesando 1 contactos listos desde PostgreSQL
+🚀 Contacto zD9aPy1nrLCFfuM8ieV2 publicado en stream stream:location:brx4IqWlCYpGp3qdLXhZ:workflow:babdf350-d4f6-4db2-8d0f-f59624b47baf con ID 1752952609632-0
+🗑️ Contacto zD9aPy1nrLCFfuM8ieV2 eliminado de sequential_queue
+🔄 Procesando 1 contactos listos desde PostgreSQL
+🚀 Contacto CnVTHOveo9NYtgA96Mdy publicado en stream stream:location:ZoE6DWxoImg4w5dIYpsg:workflow:c438717a-6547-4373-9b7c-cb5acaacf966 con ID 1752952614673-0
+🗑️ Contacto CnVTHOveo9NYtgA96Mdy eliminado de sequential_queue
+🔄 Procesando 1 contactos listos desde PostgreSQL
+🚀 Contacto uNlaJAKmg2OH3hgbWLCx publicado en stream stream:location:9PUaphRdOzEimEagkOor:workflow:f441b332-0084-40c0-9090-f0226c4879e4 con ID 1752952615686-0
+🗑️ Contacto uNlaJAKmg2OH3hgbWLCx eliminado de sequential_queue
+🔄 Procesando 1 contactos listos desde PostgreSQL
+🚀 Contacto 54BIhJXFpRDqDohC9LTd publicado en stream stream:location:x8uQoTUTSGKozjHcabM1:workflow:877ca930-56ff-4add-b740-015f69f32606 con ID 1752952617703-0
+🗑️ Contacto 54BIhJXFpRDqDohC9LTd eliminado de sequential_queue
+🔄 Procesando 2 contactos listos desde PostgreSQL
+🚀 Contacto szhbVPk6SBbOqpiti8Hj publicado en stream stream:location:1S10zJ9qXEqEZeDMBex7:workflow:0cbe6cd7-7615-4f94-a1a1-f6d8984a7d7e con ID 1752952619720-0
+🗑️ Contacto szhbVPk6SBbOqpiti8Hj eliminado de sequential_queue
+🚀 Contacto eHPWcRsSrtfpDmbCDQMk publicado en stream stream:location:UkU0lUP0b6J6R5E73pwg:workflow:09d0bde5-c953-4191-9819-c3c1868f00b9 con ID 1752952619728-0
+🗑️ Contacto eHPWcRsSrtfpDmbCDQMk eliminado de sequential_queue
+🔄 Procesando 2 contactos listos desde PostgreSQL
+🚀 Contacto sgE1BxFzbRbjqQ5n83FT publicado en stream stream:location:4H6ZW0AZqLvB6TR9Che5:workflow:8e1e003d-cb07-4431-b985-d3a20bc67c32 con ID 1752952624758-0
+🗑️ Contacto sgE1BxFzbRbjqQ5n83FT eliminado de sequential_queue
+🚀 Contacto y42zfH8sp0UY9x1zxg2C publicado en stream stream:location:6tcpYJQrxGJnKfr9T6FE:workflow:519b758b-7ece-4269-b94e-5f365353cddf con ID 1752952624765-0
+🗑️ Contacto y42zfH8sp0UY9x1zxg2C eliminado de sequential_queue
+🔄 Procesando 1 contactos listos desde PostgreSQL
+🚀 Contacto ATUhel9XWW9C4pau662y publicado en stream stream:location:WV2pjRuxIALjQUMswjKL:workflow:23beeae7-715f-42ea-a1f4-0ddc716023af con ID 1752952640853-0
+🗑️ Contacto ATUhel9XWW9C4pau662y eliminado de sequential_queue
+🔄 Procesando 1 contactos listos desde PostgreSQL
+🚀 Contacto 3HQ51pxoz1VXd4hzKKSF publicado en stream stream:location:6x2rKjW2FynYffwMABlm:workflow:a70485d8-64aa-44f1-b869-42ef66a5eae5 con ID 1752952645888-0
+🗑️ Contacto 3HQ51pxoz1VXd4hzKKSF eliminado de sequential_queue
+🔄 Procesando 2 contactos listos desde PostgreSQL
+🚀 Contacto 9w7haFzMMAK1aLcQYg7a publicado en stream stream:location:7a61hI3FXzLOu0RP9K2I:workflow:ab495965-95f0-485c-8256-09271aa3c4aa con ID 1752952646901-0
+🗑️ Contacto 9w7haFzMMAK1aLcQYg7a eliminado de sequential_queue
+🚀 Contacto cPERd5zlOUqJrbZtP2o4 publicado en stream stream:location:fgK4QNPrkW9TsnxdOLjN:workflow:b1961631-4fd8-4e89-beaa-1033bd13641b con ID 1752952646908-0
+🗑️ Contacto cPERd5zlOUqJrbZtP2o4 eliminado de sequential_queue
+🔄 Procesando 1 contactos listos desde PostgreSQL
+🚀 Contacto rEc4gCllOqJ02s0jgn6X publicado en stream stream:location:9Vpsyw2NXPYkQsyLUv3R:workflow:275a3a07-cca0-4649-8df5-024b2e75beeb con ID 1752952660988-0
+🗑️ Contacto rEc4gCllOqJ02s0jgn6X eliminado de sequential_queue
+🔄 Procesando 1 contactos listos desde PostgreSQL
+🚀 Contacto MwFXw58MNkILJjtKQgPm publicado en stream stream:location:4H6ZW0AZqLvB6TR9Che5:workflow:f460006a-ad3c-4acd-be44-12033556c48c con ID 1752952662000-0
+🗑️ Contacto MwFXw58MNkILJjtKQgPm eliminado de sequential_queue
+🔄 Procesando 2 contactos listos desde PostgreSQL
+🚀 Contacto d7ANRGkUgT5Dw2R9G9V8 publicado en stream stream:location:UkU0lUP0b6J6R5E73pwg:workflow:09d0bde5-c953-4191-9819-c3c1868f00b9 con ID 1752952663013-0
+🗑️ Contacto d7ANRGkUgT5Dw2R9G9V8 eliminado de sequential_queue
+🚀 Contacto 9FUjBGGCxkJeBd09tXzs publicado en stream stream:location:usZYrMSwAyYPnVKo3MMM:workflow:c4724e0f-631c-4f6c-bacd-79831687293e con ID 1752952663021-0
+🗑️ Contacto 9FUjBGGCxkJeBd09tXzs eliminado de sequential_queue
+🔄 Procesando 2 contactos listos desde PostgreSQL
+🚀 Contacto s34Gs4XaGFJ19cIM13LD publicado en stream stream:location:brx4IqWlCYpGp3qdLXhZ:workflow:babdf350-d4f6-4db2-8d0f-f59624b47baf con ID 1752952679111-0
+🗑️ Contacto s34Gs4XaGFJ19cIM13LD eliminado de sequential_queue
+🚀 Contacto WOPl4SrdfCfvmvcYCW6H publicado en stream stream:location:6d6IGXqPBG4y9znTo3Py:workflow:70a1191a-fbb0-4070-833e-e563814a743d con ID 1752952679124-0
+🗑️ Contacto WOPl4SrdfCfvmvcYCW6H eliminado de sequential_queue
+🔄 Procesando 1 contactos listos desde PostgreSQL
+🚀 Contacto uQ5T2FfOlL3NQGELuGjp publicado en stream stream:location:9PUaphRdOzEimEagkOor:workflow:f441b332-0084-40c0-9090-f0226c4879e4 con ID 1752952688179-0
+🗑️ Contacto uQ5T2FfOlL3NQGELuGjp eliminado de sequential_queue
+🔄 Procesando 1 contactos listos desde PostgreSQL
+🚀 Contacto TmRAB3wsiEA2D7KnwERI publicado en stream stream:location:1S10zJ9qXEqEZeDMBex7:workflow:0cbe6cd7-7615-4f94-a1a1-f6d8984a7d7e con ID 1752952689191-0
+🗑️ Contacto TmRAB3wsiEA2D7KnwERI eliminado de sequential_queue
+🔄 Procesando 1 contactos listos desde PostgreSQL
+🚀 Contacto K1wHRYsVafgnQUoq1jP5 publicado en stream stream:location:fgK4QNPrkW9TsnxdOLjN:workflow:b1961631-4fd8-4e89-beaa-1033bd13641b con ID 1752952690203-0
+🗑️ Contacto K1wHRYsVafgnQUoq1jP5 eliminado de sequential_queue
+🔄 Procesando 2 contactos listos desde PostgreSQL
+🚀 Contacto r6KqOmryeY629TCmGeQ8 publicado en stream stream:location:ZoE6DWxoImg4w5dIYpsg:workflow:c438717a-6547-4373-9b7c-cb5acaacf966 con ID 1752952694300-0
+🗑️ Contacto r6KqOmryeY629TCmGeQ8 eliminado de sequential_queue
+🚀 Contacto 8Y1VHtf1nDeM4G5LdIvn publicado en stream stream:location:usZYrMSwAyYPnVKo3MMM:workflow:5b97559d-d285-4927-b180-253299794c43 con ID 1752952694308-0
+🗑️ Contacto 8Y1VHtf1nDeM4G5LdIvn eliminado de sequential_queue
+🔄 Procesando 1 contactos listos desde PostgreSQL
+🚀 Contacto zDMUe9L2wnHOTI6OJadF publicado en stream stream:location:6x2rKjW2FynYffwMABlm:workflow:a70485d8-64aa-44f1-b869-42ef66a5eae5 con ID 1752952696325-0
+🗑️ Contacto zDMUe9L2wnHOTI6OJadF eliminado de sequential_queue
+🔄 Procesando 1 contactos listos desde PostgreSQL
+🚀 Contacto UthG8u4361JsxsOzzy1f publicado en stream stream:location:9Vpsyw2NXPYkQsyLUv3R:workflow:275a3a07-cca0-4649-8df5-024b2e75beeb con ID 1752952697340-0
+🗑️ Contacto UthG8u4361JsxsOzzy1f eliminado de sequential_queue
+🔄 Procesando 1 contactos listos desde PostgreSQL
+🚀 Contacto y6WrI1IoV8yblIU0V0Ki publicado en stream stream:location:6tcpYJQrxGJnKfr9T6FE:workflow:519b758b-7ece-4269-b94e-5f365353cddf con ID 1752952704381-0
+🗑️ Contacto y6WrI1IoV8yblIU0V0Ki eliminado de sequential_queue
+🔄 Procesando 1 contactos listos desde PostgreSQL
+🚀 Contacto 4xkG7xuDboS0jIWE0KC3 publicado en stream stream:location:x8uQoTUTSGKozjHcabM1:workflow:877ca930-56ff-4add-b740-015f69f32606 con ID 1752952706402-0
+🗑️ Contacto 4xkG7xuDboS0jIWE0KC3 eliminado de sequential_queue
+🔄 Procesando 1 contactos listos desde PostgreSQL
+🚀 Contacto mlK7UsojzUFU4sIar861 publicado en stream stream:location:VqhSluUEcTuoXitdwqPy:workflow:06d4f862-1643-4afe-bab0-bcf88382dd70 con ID 1752952707415-0
+🗑️ Contacto mlK7UsojzUFU4sIar861 eliminado de sequential_queue
+🔄 Procesando 1 contactos listos desde PostgreSQL
+🚀 Contacto iHRI3DKI2lWYBFxEyXTe publicado en stream stream:location:6FLlb0KNv3ObecveuXTf:workflow:3cc3a191-b24f-4837-bac3-5939b15295e4 con ID 1752952708427-0
+🗑️ Contacto iHRI3DKI2lWYBFxEyXTe eliminado de sequential_queue
+🔄 Procesando 2 contactos listos desde PostgreSQL
+🚀 Contacto ESirJytOuTmTok0zMpKm publicado en stream stream:location:4H6ZW0AZqLvB6TR9Che5:workflow:21b09d4e-493b-4d45-890d-be61303f6953 con ID 1752952723509-0
+🗑️ Contacto ESirJytOuTmTok0zMpKm eliminado de sequential_queue
+🚀 Contacto pIo9dxCz22byhGzNt8VK publicado en stream stream:location:9PUaphRdOzEimEagkOor:workflow:f441b332-0084-40c0-9090-f0226c4879e4 con ID 1752952723518-0
+🗑️ Contacto pIo9dxCz22byhGzNt8VK eliminado de sequential_queue
+🔄 Procesando 1 contactos listos desde PostgreSQL
+🚀 Contacto XcyCIm8OUyj0Q3qTG5uZ publicado en stream stream:location:ZoE6DWxoImg4w5dIYpsg:workflow:5ae48690-c748-4201-820c-d340a39bee90 con ID 1752952725538-0
+🗑️ Contacto XcyCIm8OUyj0Q3qTG5uZ eliminado de sequential_queue
+🔄 Procesando 1 contactos listos desde PostgreSQL
+🚀 Contacto flobOrNI9AtUmF7SjYU5 publicado en stream stream:location:4H6ZW0AZqLvB6TR9Che5:workflow:8e1e003d-cb07-4431-b985-d3a20bc67c32 con ID 1752952728563-0
+🗑️ Contacto flobOrNI9AtUmF7SjYU5 eliminado de sequential_queue
+🔄 Procesando 1 contactos listos desde PostgreSQL
+🚀 Contacto vpe6A9xTVj8iuUhyztOE publicado en stream stream:location:WV2pjRuxIALjQUMswjKL:workflow:23beeae7-715f-42ea-a1f4-0ddc716023af con ID 1752952730580-0
+🗑️ Contacto vpe6A9xTVj8iuUhyztOE eliminado de sequential_queue
+🔄 Procesando 1 contactos listos desde PostgreSQL
+🚀 Contacto lx1AYmC50QTh0kfakzd9 publicado en stream stream:location:pnOXgRugE5VIP5b0evyY:workflow:40546385-f91d-4af1-a10f-b8c06c424215 con ID 1752952731593-0
+🗑️ Contacto lx1AYmC50QTh0kfakzd9 eliminado de sequential_queue
+🔄 Procesando 1 contactos listos desde PostgreSQL
+🚀 Contacto F2J31gUOm1EG8XFmtdfI publicado en stream stream:location:oo7ARkJ6SPipO1vWwibs:workflow:e1f931ad-5ed2-402f-9d82-82e51f77d898 con ID 1752952734614-0
+🗑️ Contacto F2J31gUOm1EG8XFmtdfI eliminado de sequential_queue
+🔄 Procesando 1 contactos listos desde PostgreSQL
+🚀 Contacto Za5lHTycCj3Yxq5vCxyq publicado en stream stream:location:usZYrMSwAyYPnVKo3MMM:workflow:a71566e6-e5fe-4bad-ba80-d534df225d0e con ID 1752952735626-0
+🗑️ Contacto Za5lHTycCj3Yxq5vCxyq eliminado de sequential_queue
+🔄 Procesando 2 contactos listos desde PostgreSQL
+🚀 Contacto igWDQai97MZVR7KUlWYU publicado en stream stream:location:UkU0lUP0b6J6R5E73pwg:workflow:09d0bde5-c953-4191-9819-c3c1868f00b9 con ID 1752952743674-0
+🗑️ Contacto igWDQai97MZVR7KUlWYU eliminado de sequential_queue
+🚀 Contacto DeDVNgd8nc9z46dAxqHQ publicado en stream stream:location:fgK4QNPrkW9TsnxdOLjN:workflow:b1961631-4fd8-4e89-beaa-1033bd13641b con ID 1752952743681-0
+🗑️ Contacto DeDVNgd8nc9z46dAxqHQ eliminado de sequential_queue
+🔄 Procesando 2 contactos listos desde PostgreSQL
+🚀 Contacto 7F4BaUbmmElWaYd0gn9d publicado en stream stream:location:6x2rKjW2FynYffwMABlm:workflow:a70485d8-64aa-44f1-b869-42ef66a5eae5 con ID 1752952747709-0
+🗑️ Contacto 7F4BaUbmmElWaYd0gn9d eliminado de sequential_queue
+🚀 Contacto gzRjAOHdKMfu3hjU9Ec9 publicado en stream stream:location:4H6ZW0AZqLvB6TR9Che5:workflow:f460006a-ad3c-4acd-be44-12033556c48c con ID 1752952747716-0
+🗑️ Contacto gzRjAOHdKMfu3hjU9Ec9 eliminado de sequential_queue
+🔄 Procesando 1 contactos listos desde PostgreSQL
+🚀 Contacto uuR981kgOegf3ZV8oX6m publicado en stream stream:location:brx4IqWlCYpGp3qdLXhZ:workflow:babdf350-d4f6-4db2-8d0f-f59624b47baf con ID 1752952759783-0
+🗑️ Contacto uuR981kgOegf3ZV8oX6m eliminado de sequential_queue
+🔄 Procesando 1 contactos listos desde PostgreSQL
+🚀 Contacto mKWuC7jXfR7cf9F5o0VY publicado en stream stream:location:ZoE6DWxoImg4w5dIYpsg:workflow:c438717a-6547-4373-9b7c-cb5acaacf966 con ID 1752952765821-0
+🗑️ Contacto mKWuC7jXfR7cf9F5o0VY eliminado de sequential_queue
+🔄 Procesando 1 contactos listos desde PostgreSQL
+🚀 Contacto We5jCD4IJaBSVLngMwVH publicado en stream stream:location:1S10zJ9qXEqEZeDMBex7:workflow:0cbe6cd7-7615-4f94-a1a1-f6d8984a7d7e con ID 1752952775877-0
+🗑️ Contacto We5jCD4IJaBSVLngMwVH eliminado de sequential_queue
+🔄 Procesando 1 contactos listos desde PostgreSQL
+🚀 Contacto y2iQp8gsoS1eFCZLlfWq publicado en stream stream:location:6tcpYJQrxGJnKfr9T6FE:workflow:519b758b-7ece-4269-b94e-5f365353cddf con ID 1752952784927-0
+🗑️ Contacto y2iQp8gsoS1eFCZLlfWq eliminado de sequential_queue
+🔄 Procesando 1 contactos listos desde PostgreSQL
+🚀 Contacto B6QHRpg3l3k5Q9ANLY4S publicado en stream stream:location:6x2rKjW2FynYffwMABlm:workflow:a70485d8-64aa-44f1-b869-42ef66a5eae5 con ID 1752952789959-0
+🗑️ Contacto B6QHRpg3l3k5Q9ANLY4S eliminado de sequential_queue
+🔄 Procesando 1 contactos listos desde PostgreSQL
+🚀 Contacto UthG8u4361JsxsOzzy1f publicado en stream stream:location:9Vpsyw2NXPYkQsyLUv3R:workflow:275a3a07-cca0-4649-8df5-024b2e75beeb con ID 1752952793993-0
+🗑️ Contacto UthG8u4361JsxsOzzy1f eliminado de sequential_queue
+🔄 Procesando 1 contactos listos desde PostgreSQL
+🚀 Contacto Ycq9O01SmVRNj6zMQTkW publicado en stream stream:location:WV2pjRuxIALjQUMswjKL:workflow:23beeae7-715f-42ea-a1f4-0ddc716023af con ID 1752952798049-0
+🗑️ Contacto Ycq9O01SmVRNj6zMQTkW eliminado de sequential_queue
+🔄 Procesando 1 contactos listos desde PostgreSQL
+🚀 Contacto eEMfBVerWIwNkTiOCbtP publicado en stream stream:location:7a61hI3FXzLOu0RP9K2I:workflow:ab495965-95f0-485c-8256-09271aa3c4aa con ID 1752952803093-0
+🗑️ Contacto eEMfBVerWIwNkTiOCbtP eliminado de sequential_queue
+🔄 Procesando 1 contactos listos desde PostgreSQL
+🚀 Contacto 0TNkEsoQGV68ieiuOEJS publicado en stream stream:location:fgK4QNPrkW9TsnxdOLjN:workflow:b1961631-4fd8-4e89-beaa-1033bd13641b con ID 1752952805110-0
+🗑️ Contacto 0TNkEsoQGV68ieiuOEJS eliminado de sequential_queue
+🔄 Procesando 1 contactos listos desde PostgreSQL
+🚀 Contacto yHCwMYLMZK8aevNBQdUW publicado en stream stream:location:UkU0lUP0b6J6R5E73pwg:workflow:09d0bde5-c953-4191-9819-c3c1868f00b9 con ID 1752952814166-0
+🗑️ Contacto yHCwMYLMZK8aevNBQdUW eliminado de sequential_queue
+🔄 Procesando 1 contactos listos desde PostgreSQL
+🚀 Contacto qUjpruez8YkqvDd6YOou publicado en stream stream:location:9PUaphRdOzEimEagkOor:workflow:f441b332-0084-40c0-9090-f0226c4879e4 con ID 1752952815179-0
+🗑️ Contacto qUjpruez8YkqvDd6YOou eliminado de sequential_queue
+🔄 Procesando 1 contactos listos desde PostgreSQL
+🚀 Contacto h261fSspHAwJviVipARo publicado en stream stream:location:x8uQoTUTSGKozjHcabM1:workflow:877ca930-56ff-4add-b740-015f69f32606 con ID 1752952819208-0
+🗑️ Contacto h261fSspHAwJviVipARo eliminado de sequential_queue
+🔄 Procesando 1 contactos listos desde PostgreSQL
+🚀 Contacto Bmet5aiH5iENYWD7fmRw publicado en stream stream:location:brx4IqWlCYpGp3qdLXhZ:workflow:babdf350-d4f6-4db2-8d0f-f59624b47baf con ID 1752952829268-0
+🗑️ Contacto Bmet5aiH5iENYWD7fmRw eliminado de sequential_queue
+🔄 Procesando 1 contactos listos desde PostgreSQL
+🚀 Contacto nrDf2LebsSgIp41gsjNz publicado en stream stream:location:4H6ZW0AZqLvB6TR9Che5:workflow:8e1e003d-cb07-4431-b985-d3a20bc67c32 con ID 1752952833295-0
+🗑️ Contacto nrDf2LebsSgIp41gsjNz eliminado de sequential_queue
+🔄 Procesando 1 contactos listos desde PostgreSQL
+🚀 Contacto QpI4XoC9zxdYA2PhRZOG publicado en stream stream:location:ZoE6DWxoImg4w5dIYpsg:workflow:c438717a-6547-4373-9b7c-cb5acaacf966 con ID 1752952834307-0
+🗑️ Contacto QpI4XoC9zxdYA2PhRZOG eliminado de sequential_queue
+🔄 Procesando 1 contactos listos desde PostgreSQL
+🚀 Contacto 1G5krokezkdvGA04opQM publicado en stream stream:location:6x2rKjW2FynYffwMABlm:workflow:a70485d8-64aa-44f1-b869-42ef66a5eae5 con ID 1752952838343-0
+🗑️ Contacto 1G5krokezkdvGA04opQM eliminado de sequential_queue
+🔄 Procesando 1 contactos listos desde PostgreSQL
+🚀 Contacto v5bWBea3zAmBhQgmvOSM publicado en stream stream:location:1S10zJ9qXEqEZeDMBex7:workflow:0cbe6cd7-7615-4f94-a1a1-f6d8984a7d7e con ID 1752952844379-0
+🗑️ Contacto v5bWBea3zAmBhQgmvOSM eliminado de sequential_queue
+🔄 Procesando 1 contactos listos desde PostgreSQL
+🚀 Contacto F9fOxI3DEjBa4KJ2anBk publicado en stream stream:location:4H6ZW0AZqLvB6TR9Che5:workflow:f460006a-ad3c-4acd-be44-12033556c48c con ID 1752952846397-0
+🗑️ Contacto F9fOxI3DEjBa4KJ2anBk eliminado de sequential_queue
+🔄 Procesando 1 contactos listos desde PostgreSQL
+🚀 Contacto BfCHSmvu9rnsNfUGaVP4 publicado en stream stream:location:9Vpsyw2NXPYkQsyLUv3R:workflow:275a3a07-cca0-4649-8df5-024b2e75beeb con ID 1752952849420-0
+🗑️ Contacto BfCHSmvu9rnsNfUGaVP4 eliminado de sequential_queue
+🔄 Procesando 1 contactos listos desde PostgreSQL
+🚀 Contacto oWjfs2wLBAp2rFAeAzXD publicado en stream stream:location:Tmqk8opPQUReQ4eQNcPI:workflow:134673f7-35c2-4dce-b75e-0ac9342db131 con ID 1752952860483-0
+🗑️ Contacto oWjfs2wLBAp2rFAeAzXD eliminado de sequential_queue
+🔄 Procesando 1 contactos listos desde PostgreSQL
+🚀 Contacto b4EOXnL9MzwNcjXGytZF publicado en stream stream:location:VqhSluUEcTuoXitdwqPy:workflow:06d4f862-1643-4afe-bab0-bcf88382dd70 con ID 1752952862505-0
+🗑️ Contacto b4EOXnL9MzwNcjXGytZF eliminado de sequential_queue
+🔄 Procesando 1 contactos listos desde PostgreSQL
+🚀 Contacto kL3NTOSsxmdeVmZqGOK1 publicado en stream stream:location:UkU0lUP0b6J6R5E73pwg:workflow:09d0bde5-c953-4191-9819-c3c1868f00b9 con ID 1752952870559-0
+🗑️ Contacto kL3NTOSsxmdeVmZqGOK1 eliminado de sequential_queue
+🔄 Procesando 1 contactos listos desde PostgreSQL
+🚀 Contacto lseBCNWmCTMsQxzof794 publicado en stream stream:location:fgK4QNPrkW9TsnxdOLjN:workflow:b1961631-4fd8-4e89-beaa-1033bd13641b con ID 1752952872576-0
+🗑️ Contacto lseBCNWmCTMsQxzof794 eliminado de sequential_queue
+🔄 Procesando 1 contactos listos desde PostgreSQL
+🚀 Contacto oybYH1V8OxejxPJvvu7X publicado en stream stream:location:WV2pjRuxIALjQUMswjKL:workflow:23beeae7-715f-42ea-a1f4-0ddc716023af con ID 1752952873593-0
+🗑️ Contacto oybYH1V8OxejxPJvvu7X eliminado de sequential_queue
+🔄 Procesando 1 contactos listos desde PostgreSQL
+🚀 Contacto W5egp73oTlWd3sobfXZB publicado en stream stream:location:x8uQoTUTSGKozjHcabM1:workflow:877ca930-56ff-4add-b740-015f69f32606 con ID 1752952884658-0
+🗑️ Contacto W5egp73oTlWd3sobfXZB eliminado de sequential_queue
+🔄 Procesando 1 contactos listos desde PostgreSQL
+🚀 Contacto y8lT2gubCWrCaSKutPKH publicado en stream stream:location:6tcpYJQrxGJnKfr9T6FE:workflow:519b758b-7ece-4269-b94e-5f365353cddf con ID 1752952888687-0
+🗑️ Contacto y8lT2gubCWrCaSKutPKH eliminado de sequential_queue
+🔄 Procesando 2 contactos listos desde PostgreSQL
+🚀 Contacto qkO3wLY6ThInOpljfvOJ publicado en stream stream:location:6x2rKjW2FynYffwMABlm:workflow:a70485d8-64aa-44f1-b869-42ef66a5eae5 con ID 1752952893718-0
+🗑️ Contacto qkO3wLY6ThInOpljfvOJ eliminado de sequential_queue
+🚀 Contacto gPaVeOwsPoARO7dteGh3 publicado en stream stream:location:brx4IqWlCYpGp3qdLXhZ:workflow:babdf350-d4f6-4db2-8d0f-f59624b47baf con ID 1752952893726-0
+🗑️ Contacto gPaVeOwsPoARO7dteGh3 eliminado de sequential_queue
+🔄 Procesando 1 contactos listos desde PostgreSQL
+🚀 Contacto qdgFBEgFQyjBSSd4Um5g publicado en stream stream:location:9PUaphRdOzEimEagkOor:workflow:f441b332-0084-40c0-9090-f0226c4879e4 con ID 1752952897752-0
+🗑️ Contacto qdgFBEgFQyjBSSd4Um5g eliminado de sequential_queue
+🔄 Procesando 1 contactos listos desde PostgreSQL
+🚀 Contacto 5ERhFeIMEbJ87ksVrRZZ publicado en stream stream:location:4H6ZW0AZqLvB6TR9Che5:workflow:8e1e003d-cb07-4431-b985-d3a20bc67c32 con ID 1752952913839-0
+🗑️ Contacto 5ERhFeIMEbJ87ksVrRZZ eliminado de sequential_queue
+🔄 Procesando 1 contactos listos desde PostgreSQL
+🚀 Contacto hheIeQLcQXpqOV6f606v publicado en stream stream:location:1S10zJ9qXEqEZeDMBex7:workflow:0cbe6cd7-7615-4f94-a1a1-f6d8984a7d7e con ID 1752952922892-0
+🗑️ Contacto hheIeQLcQXpqOV6f606v eliminado de sequential_queue
+🔄 Procesando 1 contactos listos desde PostgreSQL
+🚀 Contacto oEBUWpn08hpqJAlyh7o1 publicado en stream stream:location:9PUaphRdOzEimEagkOor:workflow:f441b332-0084-40c0-9090-f0226c4879e4 con ID 1752952927923-0
+🗑️ Contacto oEBUWpn08hpqJAlyh7o1 eliminado de sequential_queue
+🔄 Procesando 1 contactos listos desde PostgreSQL
+🚀 Contacto ILJnqnL0tQDMaMKoWuIu publicado en stream stream:location:fgK4QNPrkW9TsnxdOLjN:workflow:b1961631-4fd8-4e89-beaa-1033bd13641b con ID 1752952928936-0
+🗑️ Contacto ILJnqnL0tQDMaMKoWuIu eliminado de sequential_queue
+🔄 Procesando 1 contactos listos desde PostgreSQL
+🚀 Contacto FggY7LJm9ex67LSuJQgp publicado en stream stream:location:ZoE6DWxoImg4w5dIYpsg:workflow:c438717a-6547-4373-9b7c-cb5acaacf966 con ID 1752952929948-0
+🗑️ Contacto FggY7LJm9ex67LSuJQgp eliminado de sequential_queue
+🔄 Procesando 2 contactos listos desde PostgreSQL
+🚀 Contacto 07OG7OdRnwAAhyOQA3b1 publicado en stream stream:location:pnOXgRugE5VIP5b0evyY:workflow:40546385-f91d-4af1-a10f-b8c06c424215 con ID 1752952930964-0
+🗑️ Contacto 07OG7OdRnwAAhyOQA3b1 eliminado de sequential_queue
+🚀 Contacto XVIU4OIvegTTLr3yhPCo publicado en stream stream:location:6FLlb0KNv3ObecveuXTf:workflow:3cc3a191-b24f-4837-bac3-5939b15295e4 con ID 1752952930974-0
+🗑️ Contacto XVIU4OIvegTTLr3yhPCo eliminado de sequential_queue
+🔄 Procesando 1 contactos listos desde PostgreSQL
+🚀 Contacto gjHwETN4DQQB5uKF8j5Z publicado en stream stream:location:6x2rKjW2FynYffwMABlm:workflow:a70485d8-64aa-44f1-b869-42ef66a5eae5 con ID 1752952939028-0
+🗑️ Contacto gjHwETN4DQQB5uKF8j5Z eliminado de sequential_queue
+🔄 Procesando 1 contactos listos desde PostgreSQL
+🚀 Contacto oniktwJp3Nm2bOgjEMYI publicado en stream stream:location:4H6ZW0AZqLvB6TR9Che5:workflow:f460006a-ad3c-4acd-be44-12033556c48c con ID 1752952942052-0
+🗑️ Contacto oniktwJp3Nm2bOgjEMYI eliminado de sequential_queue
+🔄 Procesando 1 contactos listos desde PostgreSQL
+🚀 Contacto eHrH7SmPVdtUrnz12Vb5 publicado en stream stream:location:UkU0lUP0b6J6R5E73pwg:workflow:09d0bde5-c953-4191-9819-c3c1868f00b9 con ID 1752952945074-0
+🗑️ Contacto eHrH7SmPVdtUrnz12Vb5 eliminado de sequential_queue
+🔄 Procesando 1 contactos listos desde PostgreSQL
+🚀 Contacto OdZZE9r3wfO0gmX5Ykq4 publicado en stream stream:location:x8uQoTUTSGKozjHcabM1:workflow:877ca930-56ff-4add-b740-015f69f32606 con ID 1752952946087-0
+🗑️ Contacto OdZZE9r3wfO0gmX5Ykq4 eliminado de sequential_queue
+🔄 Procesando 1 contactos listos desde PostgreSQL
+🚀 Contacto BfCHSmvu9rnsNfUGaVP4 publicado en stream stream:location:9Vpsyw2NXPYkQsyLUv3R:workflow:275a3a07-cca0-4649-8df5-024b2e75beeb con ID 1752952958216-0
+🗑️ Contacto BfCHSmvu9rnsNfUGaVP4 eliminado de sequential_queue
+🔄 Procesando 1 contactos listos desde PostgreSQL
+🚀 Contacto NSeqxqnB0gZ54dYLotej publicado en stream stream:location:usZYrMSwAyYPnVKo3MMM:workflow:a71566e6-e5fe-4bad-ba80-d534df225d0e con ID 1752952962243-0
+🗑️ Contacto NSeqxqnB0gZ54dYLotej eliminado de sequential_queue
+🔄 Procesando 1 contactos listos desde PostgreSQL
+🚀 Contacto 9rh5GE4gryPBfABNxtb1 publicado en stream stream:location:WV2pjRuxIALjQUMswjKL:workflow:23beeae7-715f-42ea-a1f4-0ddc716023af con ID 1752952982355-0
+🗑️ Contacto 9rh5GE4gryPBfABNxtb1 eliminado de sequential_queue
+🔄 Procesando 1 contactos listos desde PostgreSQL
+🚀 Contacto bPADTySmeFRkn4fHlVtW publicado en stream stream:location:brx4IqWlCYpGp3qdLXhZ:workflow:babdf350-d4f6-4db2-8d0f-f59624b47baf con ID 1752952984372-0
+🗑️ Contacto bPADTySmeFRkn4fHlVtW eliminado de sequential_queue
+🔄 Procesando 1 contactos listos desde PostgreSQL
+🚀 Contacto y6ExBGkGHc4U7Ym0UnPF publicado en stream stream:location:6tcpYJQrxGJnKfr9T6FE:workflow:519b758b-7ece-4269-b94e-5f365353cddf con ID 1752952985384-0
+🗑️ Contacto y6ExBGkGHc4U7Ym0UnPF eliminado de sequential_queue
+🔄 Procesando 2 contactos listos desde PostgreSQL
+🚀 Contacto 7T8vqvFbyY3GValItYsV publicado en stream stream:location:6x2rKjW2FynYffwMABlm:workflow:a70485d8-64aa-44f1-b869-42ef66a5eae5 con ID 1752952988407-0
+🗑️ Contacto 7T8vqvFbyY3GValItYsV eliminado de sequential_queue
+🚀 Contacto CAP0ZEran2KDGPkXHCQi publicado en stream stream:location:fgK4QNPrkW9TsnxdOLjN:workflow:b1961631-4fd8-4e89-beaa-1033bd13641b con ID 1752952988414-0
+🗑️ Contacto CAP0ZEran2KDGPkXHCQi eliminado de sequential_queue
+🔄 Procesando 1 contactos listos desde PostgreSQL
+🚀 Contacto twyvkpcZ6iwLs5CrUbzT publicado en stream stream:location:9Vpsyw2NXPYkQsyLUv3R:workflow:275a3a07-cca0-4649-8df5-024b2e75beeb con ID 1752952993448-0
+🗑️ Contacto twyvkpcZ6iwLs5CrUbzT eliminado de sequential_queue
+🔄 Procesando 1 contactos listos desde PostgreSQL
+🚀 Contacto iAlVZwCJZWMp0mK57G4A publicado en stream stream:location:7a61hI3FXzLOu0RP9K2I:workflow:ab495965-95f0-485c-8256-09271aa3c4aa con ID 1752952994460-0
+🗑️ Contacto iAlVZwCJZWMp0mK57G4A eliminado de sequential_queue
+🔄 Procesando 1 contactos listos desde PostgreSQL
+🚀 Contacto SPZfjlj9eMWvjzN4HgsP publicado en stream stream:location:1S10zJ9qXEqEZeDMBex7:workflow:0cbe6cd7-7615-4f94-a1a1-f6d8984a7d7e con ID 1752953011559-0
+🗑️ Contacto SPZfjlj9eMWvjzN4HgsP eliminado de sequential_queue
+🔄 Procesando 1 contactos listos desde PostgreSQL
+🚀 Contacto doA5FApKaXjPYzIhNEp2 publicado en stream stream:location:UkU0lUP0b6J6R5E73pwg:workflow:09d0bde5-c953-4191-9819-c3c1868f00b9 con ID 1752953012573-0
+🗑️ Contacto doA5FApKaXjPYzIhNEp2 eliminado de sequential_queue
+🔄 Procesando 1 contactos listos desde PostgreSQL
+🚀 Contacto qjrie6M0mMgp4aZHCbXy publicado en stream stream:location:9PUaphRdOzEimEagkOor:workflow:f441b332-0084-40c0-9090-f0226c4879e4 con ID 1752953017609-0
+🗑️ Contacto qjrie6M0mMgp4aZHCbXy eliminado de sequential_queue
+🔄 Procesando 1 contactos listos desde PostgreSQL
+🚀 Contacto SWeM59T1tAMdd5JYfjrU publicado en stream stream:location:6x2rKjW2FynYffwMABlm:workflow:a70485d8-64aa-44f1-b869-42ef66a5eae5 con ID 1752953021637-0
+🗑️ Contacto SWeM59T1tAMdd5JYfjrU eliminado de sequential_queue
+🔄 Procesando 1 contactos listos desde PostgreSQL
+🚀 Contacto hDha8fp6pUrgZRW6QC0N publicado en stream stream:location:ZoE6DWxoImg4w5dIYpsg:workflow:c438717a-6547-4373-9b7c-cb5acaacf966 con ID 1752953031694-0
+🗑️ Contacto hDha8fp6pUrgZRW6QC0N eliminado de sequential_queue
+🔄 Procesando 1 contactos listos desde PostgreSQL
+🚀 Contacto GtkIqOJfwIOnJA1uw8W8 publicado en stream stream:location:4H6ZW0AZqLvB6TR9Che5:workflow:8e1e003d-cb07-4431-b985-d3a20bc67c32 con ID 1752953033716-0
+🗑️ Contacto GtkIqOJfwIOnJA1uw8W8 eliminado de sequential_queue
+🔄 Procesando 1 contactos listos desde PostgreSQL
+🚀 Contacto ghWyRQwK9zn926IKAbWg publicado en stream stream:location:fgK4QNPrkW9TsnxdOLjN:workflow:b1961631-4fd8-4e89-beaa-1033bd13641b con ID 1752953034729-0
+🗑️ Contacto ghWyRQwK9zn926IKAbWg eliminado de sequential_queue
+🔄 Procesando 1 contactos listos desde PostgreSQL
+🚀 Contacto 6WpTtW3KBXXczTIYrCdj publicado en stream stream:location:x8uQoTUTSGKozjHcabM1:workflow:877ca930-56ff-4add-b740-015f69f32606 con ID 1752953042785-0
+🗑️ Contacto 6WpTtW3KBXXczTIYrCdj eliminado de sequential_queue
+🔄 Procesando 1 contactos listos desde PostgreSQL
+🚀 Contacto y8AOTLXtRvKMtiUJGnjq publicado en stream stream:location:6tcpYJQrxGJnKfr9T6FE:workflow:519b758b-7ece-4269-b94e-5f365353cddf con ID 1752953048825-0
+🗑️ Contacto y8AOTLXtRvKMtiUJGnjq eliminado de sequential_queue
+🔄 Procesando 1 contactos listos desde PostgreSQL
+🚀 Contacto wRhGPxz70DDeFvntQ0zP publicado en stream stream:location:brx4IqWlCYpGp3qdLXhZ:workflow:babdf350-d4f6-4db2-8d0f-f59624b47baf con ID 1752953055871-0
+🗑️ Contacto wRhGPxz70DDeFvntQ0zP eliminado de sequential_queue
+🔄 Procesando 1 contactos listos desde PostgreSQL
+🚀 Contacto XmdMb7EIBfG70253u6kI publicado en stream stream:location:6x2rKjW2FynYffwMABlm:workflow:a70485d8-64aa-44f1-b869-42ef66a5eae5 con ID 1752953056883-0
+🗑️ Contacto XmdMb7EIBfG70253u6kI eliminado de sequential_queue
+🔄 Procesando 2 contactos listos desde PostgreSQL
+🚀 Contacto i2cFhhS5iAK1ybHV6NIo publicado en stream stream:location:WV2pjRuxIALjQUMswjKL:workflow:23beeae7-715f-42ea-a1f4-0ddc716023af con ID 1752953057895-0
+🗑️ Contacto i2cFhhS5iAK1ybHV6NIo eliminado de sequential_queue
+🚀 Contacto rileK5zHcDzuNYs2EsVn publicado en stream stream:location:4H6ZW0AZqLvB6TR9Che5:workflow:f460006a-ad3c-4acd-be44-12033556c48c con ID 1752953057903-0
+🗑️ Contacto rileK5zHcDzuNYs2EsVn eliminado de sequential_queue
+🔄 Procesando 1 contactos listos desde PostgreSQL
+🚀 Contacto r3mw71C5hcklrE2k16pw publicado en stream stream:location:9PUaphRdOzEimEagkOor:workflow:f441b332-0084-40c0-9090-f0226c4879e4 con ID 1752953066955-0
+🗑️ Contacto r3mw71C5hcklrE2k16pw eliminado de sequential_queue
+🔄 Procesando 1 contactos listos desde PostgreSQL
+🚀 Contacto mpJgKh2zGtneTSSjGyXf publicado en stream stream:location:VqhSluUEcTuoXitdwqPy:workflow:06d4f862-1643-4afe-bab0-bcf88382dd70 con ID 1752953067969-0
+🗑️ Contacto mpJgKh2zGtneTSSjGyXf eliminado de sequential_queue
+🔄 Procesando 1 contactos listos desde PostgreSQL
+🚀 Contacto s077Y975qXXPbmV4v8zN publicado en stream stream:location:pnOXgRugE5VIP5b0evyY:workflow:40546385-f91d-4af1-a10f-b8c06c424215 con ID 1752953078025-0
+🗑️ Contacto s077Y975qXXPbmV4v8zN eliminado de sequential_queue
+🔄 Procesando 1 contactos listos desde PostgreSQL
+🚀 Contacto twyvkpcZ6iwLs5CrUbzT publicado en stream stream:location:9Vpsyw2NXPYkQsyLUv3R:workflow:275a3a07-cca0-4649-8df5-024b2e75beeb con ID 1752953089091-0
+🗑️ Contacto twyvkpcZ6iwLs5CrUbzT eliminado de sequential_queue
+🔄 Procesando 1 contactos listos desde PostgreSQL
+🚀 Contacto jCbUWQlvHa2OjdPKyo0C publicado en stream stream:location:7a61hI3FXzLOu0RP9K2I:workflow:ab495965-95f0-485c-8256-09271aa3c4aa con ID 1752953093120-0
+🗑️ Contacto jCbUWQlvHa2OjdPKyo0C eliminado de sequential_queue
+🔄 Procesando 1 contactos listos desde PostgreSQL
+🚀 Contacto YaS47A3TH04ssE9Y6vCt publicado en stream stream:location:UkU0lUP0b6J6R5E73pwg:workflow:09d0bde5-c953-4191-9819-c3c1868f00b9 con ID 1752953094133-0
+🗑️ Contacto YaS47A3TH04ssE9Y6vCt eliminado de sequential_queue
+🔄 Procesando 2 contactos listos desde PostgreSQL
+🚀 Contacto 4s2ykEaXNft8JHI9Vzz2 publicado en stream stream:location:fgK4QNPrkW9TsnxdOLjN:workflow:b1961631-4fd8-4e89-beaa-1033bd13641b con ID 1752953096151-0
+🗑️ Contacto 4s2ykEaXNft8JHI9Vzz2 eliminado de sequential_queue
+🚀 Contacto 6KDTJOgmnpWgX99uYcXa publicado en stream stream:location:4H6ZW0AZqLvB6TR9Che5:workflow:8e1e003d-cb07-4431-b985-d3a20bc67c32 con ID 1752953096159-0
+🗑️ Contacto 6KDTJOgmnpWgX99uYcXa eliminado de sequential_queue
+🔄 Procesando 1 contactos listos desde PostgreSQL
+🚀 Contacto PL6frQ5NYc2WwuHm0wHj publicado en stream stream:location:6x2rKjW2FynYffwMABlm:workflow:a70485d8-64aa-44f1-b869-42ef66a5eae5 con ID 1752953097171-0
+🗑️ Contacto PL6frQ5NYc2WwuHm0wHj eliminado de sequential_queue
+🔄 Procesando 1 contactos listos desde PostgreSQL
+🚀 Contacto ge8RkGwFM0Gb1Xt1q0Km publicado en stream stream:location:1S10zJ9qXEqEZeDMBex7:workflow:0cbe6cd7-7615-4f94-a1a1-f6d8984a7d7e con ID 1752953099189-0
+🗑️ Contacto ge8RkGwFM0Gb1Xt1q0Km eliminado de sequential_queue
+🔄 Procesando 1 contactos listos desde PostgreSQL
+🚀 Contacto qnPcTlFDhOD2jgeZ6xO8 publicado en stream stream:location:usZYrMSwAyYPnVKo3MMM:workflow:c4724e0f-631c-4f6c-bacd-79831687293e con ID 1752953102217-0
+🗑️ Contacto qnPcTlFDhOD2jgeZ6xO8 eliminado de sequential_queue
+🔄 Procesando 1 contactos listos desde PostgreSQL
+🚀 Contacto EsK8jjVUCzU6qCfccYi8 publicado en stream stream:location:ZoE6DWxoImg4w5dIYpsg:workflow:c438717a-6547-4373-9b7c-cb5acaacf966 con ID 1752953110272-0
+🗑️ Contacto EsK8jjVUCzU6qCfccYi8 eliminado de sequential_queue
+🔄 Procesando 1 contactos listos desde PostgreSQL
+🚀 Contacto y8mCt8XViJyFWokPNA6I publicado en stream stream:location:6tcpYJQrxGJnKfr9T6FE:workflow:519b758b-7ece-4269-b94e-5f365353cddf con ID 1752953111285-0
+🗑️ Contacto y8mCt8XViJyFWokPNA6I eliminado de sequential_queue
+🔄 Procesando 1 contactos listos desde PostgreSQL
+🚀 Contacto KsWpAiplAn5ewPzJcbhJ publicado en stream stream:location:brx4IqWlCYpGp3qdLXhZ:workflow:babdf350-d4f6-4db2-8d0f-f59624b47baf con ID 1752953117323-0
+🗑️ Contacto KsWpAiplAn5ewPzJcbhJ eliminado de sequential_queue
+🔄 Procesando 1 contactos listos desde PostgreSQL
+🚀 Contacto Ffd3KyrKUwahJgjSvjXW publicado en stream stream:location:9Vpsyw2NXPYkQsyLUv3R:workflow:275a3a07-cca0-4649-8df5-024b2e75beeb con ID 1752953120345-0
+🗑️ Contacto Ffd3KyrKUwahJgjSvjXW eliminado de sequential_queue
+🔄 Procesando 1 contactos listos desde PostgreSQL
+🚀 Contacto 7javj06qZF6QCkXPIilD publicado en stream stream:location:6x2rKjW2FynYffwMABlm:workflow:a70485d8-64aa-44f1-b869-42ef66a5eae5 con ID 1752953130408-0
+🗑️ Contacto 7javj06qZF6QCkXPIilD eliminado de sequential_queue
+🔄 Procesando 1 contactos listos desde PostgreSQL
+🚀 Contacto iBF1u1GZqLlFUDty8HA6 publicado en stream stream:location:4H6ZW0AZqLvB6TR9Che5:workflow:f460006a-ad3c-4acd-be44-12033556c48c con ID 1752953132425-0
+🗑️ Contacto iBF1u1GZqLlFUDty8HA6 eliminado de sequential_queue
+🔄 Procesando 1 contactos listos desde PostgreSQL
+🚀 Contacto 0mCIKOrs5XS3oYeOxvTU publicado en stream stream:location:UkU0lUP0b6J6R5E73pwg:workflow:09d0bde5-c953-4191-9819-c3c1868f00b9 con ID 1752953136450-0
+🗑️ Contacto 0mCIKOrs5XS3oYeOxvTU eliminado de sequential_queue
+🔄 Procesando 1 contactos listos desde PostgreSQL
+🚀 Contacto 0qt00dkqMSF3wgPAjchD publicado en stream stream:location:x8uQoTUTSGKozjHcabM1:workflow:877ca930-56ff-4add-b740-015f69f32606 con ID 1752953146514-0
+🗑️ Contacto 0qt00dkqMSF3wgPAjchD eliminado de sequential_queue
+🔄 Procesando 1 contactos listos desde PostgreSQL
+🚀 Contacto mRahBgqKwT6BsutpXYsP publicado en stream stream:location:WV2pjRuxIALjQUMswjKL:workflow:23beeae7-715f-42ea-a1f4-0ddc716023af con ID 1752953158582-0
+🗑️ Contacto mRahBgqKwT6BsutpXYsP eliminado de sequential_queue
+🔄 Procesando 1 contactos listos desde PostgreSQL
+🚀 Contacto QtTmPC0lAmjYzFuh9jBb publicado en stream stream:location:6d6IGXqPBG4y9znTo3Py:workflow:f64beb40-4c9c-47d1-a789-956da0c42247 con ID 1752953161605-0
+🗑️ Contacto QtTmPC0lAmjYzFuh9jBb eliminado de sequential_queue
+🔄 Procesando 1 contactos listos desde PostgreSQL
+🚀 Contacto 37I0sKSboMTRZmlfi7pm publicado en stream stream:location:1S10zJ9qXEqEZeDMBex7:workflow:0cbe6cd7-7615-4f94-a1a1-f6d8984a7d7e con ID 1752953163623-0
+🗑️ Contacto 37I0sKSboMTRZmlfi7pm eliminado de sequential_queue
+🔄 Procesando 1 contactos listos desde PostgreSQL
+🚀 Contacto MBP5kGfSubFKVeJ3S6Y1 publicado en stream stream:location:Tmqk8opPQUReQ4eQNcPI:workflow:134673f7-35c2-4dce-b75e-0ac9342db131 con ID 1752953166646-0
+🗑️ Contacto MBP5kGfSubFKVeJ3S6Y1 eliminado de sequential_queue
+🔄 Procesando 1 contactos listos desde PostgreSQL
+🚀 Contacto gogieOAch6gHfSkOG8ND publicado en stream stream:location:fgK4QNPrkW9TsnxdOLjN:workflow:b1961631-4fd8-4e89-beaa-1033bd13641b con ID 1752953169667-0
+🗑️ Contacto gogieOAch6gHfSkOG8ND eliminado de sequential_queue
+🔄 Procesando 1 contactos listos desde PostgreSQL
+🚀 Contacto s5jY2ouA0lHbJCCNARvn publicado en stream stream:location:6x2rKjW2FynYffwMABlm:workflow:a70485d8-64aa-44f1-b869-42ef66a5eae5 con ID 1752953175708-0
+🗑️ Contacto s5jY2ouA0lHbJCCNARvn eliminado de sequential_queue
+🔄 Procesando 1 contactos listos desde PostgreSQL
+🚀 Contacto Nr66ZWTVQu3K7Y2073cL publicado en stream stream:location:brx4IqWlCYpGp3qdLXhZ:workflow:babdf350-d4f6-4db2-8d0f-f59624b47baf con ID 1752953177726-0
+🗑️ Contacto Nr66ZWTVQu3K7Y2073cL eliminado de sequential_queue
+🔄 Procesando 2 contactos listos desde PostgreSQL
+🚀 Contacto Ffd3KyrKUwahJgjSvjXW publicado en stream stream:location:9Vpsyw2NXPYkQsyLUv3R:workflow:275a3a07-cca0-4649-8df5-024b2e75beeb con ID 1752953189794-0
+🗑️ Contacto Ffd3KyrKUwahJgjSvjXW eliminado de sequential_queue
+🚀 Contacto F1ws6dU57TiOljkMS8xt publicado en stream stream:location:4H6ZW0AZqLvB6TR9Che5:workflow:8e1e003d-cb07-4431-b985-d3a20bc67c32 con ID 1752953189801-0
+🗑️ Contacto F1ws6dU57TiOljkMS8xt eliminado de sequential_queue
+🔄 Procesando 1 contactos listos desde PostgreSQL
+🚀 Contacto o2lxu7RZLLSsDcNwSFJt publicado en stream stream:location:UkU0lUP0b6J6R5E73pwg:workflow:09d0bde5-c953-4191-9819-c3c1868f00b9 con ID 1752953191818-0
+🗑️ Contacto o2lxu7RZLLSsDcNwSFJt eliminado de sequential_queue
+🔄 Procesando 1 contactos listos desde PostgreSQL
+🚀 Contacto UdAweFWNDO863OooOwKu publicado en stream stream:location:7a61hI3FXzLOu0RP9K2I:workflow:ab495965-95f0-485c-8256-09271aa3c4aa con ID 1752953201873-0
+🗑️ Contacto UdAweFWNDO863OooOwKu eliminado de sequential_queue
+🔄 Procesando 2 contactos listos desde PostgreSQL
+🚀 Contacto IjoZuSdLsMqTWDDHs7iY publicado en stream stream:location:ZoE6DWxoImg4w5dIYpsg:workflow:c438717a-6547-4373-9b7c-cb5acaacf966 con ID 1752953209923-0
+🗑️ Contacto IjoZuSdLsMqTWDDHs7iY eliminado de sequential_queue
+🚀 Contacto prdoc6ZFbAw5RL6XTY5K publicado en stream stream:location:x8uQoTUTSGKozjHcabM1:workflow:877ca930-56ff-4add-b740-015f69f32606 con ID 1752953209931-0
+🗑️ Contacto prdoc6ZFbAw5RL6XTY5K eliminado de sequential_queue
+🔄 Procesando 1 contactos listos desde PostgreSQL
+🚀 Contacto QoWbwsHEABv7Ci1xU3GE publicado en stream stream:location:WV2pjRuxIALjQUMswjKL:workflow:23beeae7-715f-42ea-a1f4-0ddc716023af con ID 1752953220993-0
+🗑️ Contacto QoWbwsHEABv7Ci1xU3GE eliminado de sequential_queue
+🔄 Procesando 1 contactos listos desde PostgreSQL
+🚀 Contacto e96OyT6NaFNYBGe4Oly8 publicado en stream stream:location:4H6ZW0AZqLvB6TR9Che5:workflow:f460006a-ad3c-4acd-be44-12033556c48c con ID 1752953222005-0
+🗑️ Contacto e96OyT6NaFNYBGe4Oly8 eliminado de sequential_queue
+🔄 Procesando 1 contactos listos desde PostgreSQL
+🚀 Contacto yJ1v2uLEVrygEzHzkNYu publicado en stream stream:location:6tcpYJQrxGJnKfr9T6FE:workflow:519b758b-7ece-4269-b94e-5f365353cddf con ID 1752953225032-0
+🗑️ Contacto yJ1v2uLEVrygEzHzkNYu eliminado de sequential_queue
+🔄 Procesando 1 contactos listos desde PostgreSQL
+🚀 Contacto pYChfhFsre4wpEERU6jr publicado en stream stream:location:6x2rKjW2FynYffwMABlm:workflow:a70485d8-64aa-44f1-b869-42ef66a5eae5 con ID 1752953227049-0
+🗑️ Contacto pYChfhFsre4wpEERU6jr eliminado de sequential_queue
+🔄 Procesando 1 contactos listos desde PostgreSQL
+🚀 Contacto ysJZESaKMjwOxCZMZTrn publicado en stream stream:location:fgK4QNPrkW9TsnxdOLjN:workflow:b1961631-4fd8-4e89-beaa-1033bd13641b con ID 1752953228061-0
+🗑️ Contacto ysJZESaKMjwOxCZMZTrn eliminado de sequential_queue
+🔄 Procesando 1 contactos listos desde PostgreSQL
+🚀 Contacto XC4N6E38RQ3RYddCQhzh publicado en stream stream:location:1S10zJ9qXEqEZeDMBex7:workflow:0cbe6cd7-7615-4f94-a1a1-f6d8984a7d7e con ID 1752953232086-0
+🗑️ Contacto XC4N6E38RQ3RYddCQhzh eliminado de sequential_queue
+🔄 Procesando 2 contactos listos desde PostgreSQL
+🚀 Contacto OiuHLDySyxn8nhioengl publicado en stream stream:location:VqhSluUEcTuoXitdwqPy:workflow:06d4f862-1643-4afe-bab0-bcf88382dd70 con ID 1752953242145-0
+🗑️ Contacto OiuHLDySyxn8nhioengl eliminado de sequential_queue
+🚀 Contacto ESw7ltmfZ55zJv6VEMB4 publicado en stream stream:location:UkU0lUP0b6J6R5E73pwg:workflow:09d0bde5-c953-4191-9819-c3c1868f00b9 con ID 1752953242152-0
+🗑️ Contacto ESw7ltmfZ55zJv6VEMB4 eliminado de sequential_queue
+🔄 Procesando 1 contactos listos desde PostgreSQL
+🚀 Contacto M0Lc9DxfO1my1lyIS8fb publicado en stream stream:location:9Vpsyw2NXPYkQsyLUv3R:workflow:275a3a07-cca0-4649-8df5-024b2e75beeb con ID 1752953244169-0
+🗑️ Contacto M0Lc9DxfO1my1lyIS8fb eliminado de sequential_queue
+🔄 Procesando 1 contactos listos desde PostgreSQL
+🚀 Contacto tDUyR2p9sHRT4zWvWPsb publicado en stream stream:location:usZYrMSwAyYPnVKo3MMM:workflow:a71566e6-e5fe-4bad-ba80-d534df225d0e con ID 1752953246188-0
+🗑️ Contacto tDUyR2p9sHRT4zWvWPsb eliminado de sequential_queue
+🔄 Procesando 1 contactos listos desde PostgreSQL
+🚀 Contacto NlY2jHHbP87eDv2LrEK9 publicado en stream stream:location:brx4IqWlCYpGp3qdLXhZ:workflow:babdf350-d4f6-4db2-8d0f-f59624b47baf con ID 1752953250217-0
+🗑️ Contacto NlY2jHHbP87eDv2LrEK9 eliminado de sequential_queue
+🔄 Procesando 1 contactos listos desde PostgreSQL
+🚀 Contacto rqOyynGXeMmCMeJzuBtm publicado en stream stream:location:9PUaphRdOzEimEagkOor:workflow:f441b332-0084-40c0-9090-f0226c4879e4 con ID 1752953257259-0
+🗑️ Contacto rqOyynGXeMmCMeJzuBtm eliminado de sequential_queue
+🔄 Procesando 1 contactos listos desde PostgreSQL
+🚀 Contacto UmNeWUmEj9eHyyvPEzYb publicado en stream stream:location:pnOXgRugE5VIP5b0evyY:workflow:40546385-f91d-4af1-a10f-b8c06c424215 con ID 1752953267315-0
+🗑️ Contacto UmNeWUmEj9eHyyvPEzYb eliminado de sequential_queue
+🔄 Procesando 1 contactos listos desde PostgreSQL
+🚀 Contacto eupwBcHWUFTi3PBliLkS publicado en stream stream:location:4H6ZW0AZqLvB6TR9Che5:workflow:8e1e003d-cb07-4431-b985-d3a20bc67c32 con ID 1752953273351-0
+🗑️ Contacto eupwBcHWUFTi3PBliLkS eliminado de sequential_queue
+🔄 Procesando 1 contactos listos desde PostgreSQL
+🚀 Contacto oYKUzbz715h96DRlPVC7 publicado en stream stream:location:UkU0lUP0b6J6R5E73pwg:workflow:09d0bde5-c953-4191-9819-c3c1868f00b9 con ID 1752953278384-0
+🗑️ Contacto oYKUzbz715h96DRlPVC7 eliminado de sequential_queue
+🔄 Procesando 1 contactos listos desde PostgreSQL
+🚀 Contacto OMrAKsrprublGp0q0yVd publicado en stream stream:location:6x2rKjW2FynYffwMABlm:workflow:a70485d8-64aa-44f1-b869-42ef66a5eae5 con ID 1752953282412-0
+🗑️ Contacto OMrAKsrprublGp0q0yVd eliminado de sequential_queue
+🔄 Procesando 1 contactos listos desde PostgreSQL
+🚀 Contacto p4SFroqaUA8qB80aVcRW publicado en stream stream:location:x8uQoTUTSGKozjHcabM1:workflow:877ca930-56ff-4add-b740-015f69f32606 con ID 1752953286442-0
+🗑️ Contacto p4SFroqaUA8qB80aVcRW eliminado de sequential_queue
+🔄 Procesando 1 contactos listos desde PostgreSQL
+🚀 Contacto yE0YwbbXTDRqOrMSVMzo publicado en stream stream:location:6tcpYJQrxGJnKfr9T6FE:workflow:519b758b-7ece-4269-b94e-5f365353cddf con ID 1752953291476-0
+🗑️ Contacto yE0YwbbXTDRqOrMSVMzo eliminado de sequential_queue
+🔄 Procesando 1 contactos listos desde PostgreSQL
+🚀 Contacto 1ytWsimiTnAXfTXPBDUy publicado en stream stream:location:fgK4QNPrkW9TsnxdOLjN:workflow:b1961631-4fd8-4e89-beaa-1033bd13641b con ID 1752953300532-0
+🗑️ Contacto 1ytWsimiTnAXfTXPBDUy eliminado de sequential_queue
+🔄 Procesando 1 contactos listos desde PostgreSQL
+🚀 Contacto L1JMuSEEY7c1Sve5LYj3 publicado en stream stream:location:1S10zJ9qXEqEZeDMBex7:workflow:0cbe6cd7-7615-4f94-a1a1-f6d8984a7d7e con ID 1752953301545-0
+🗑️ Contacto L1JMuSEEY7c1Sve5LYj3 eliminado de sequential_queue
+🔄 Procesando 1 contactos listos desde PostgreSQL
+🚀 Contacto hBzmDhLirKKIKKk3AaUE publicado en stream stream:location:6FLlb0KNv3ObecveuXTf:workflow:3cc3a191-b24f-4837-bac3-5939b15295e4 con ID 1752953307587-0
+🗑️ Contacto hBzmDhLirKKIKKk3AaUE eliminado de sequential_queue
+🔄 Procesando 1 contactos listos desde PostgreSQL
+🚀 Contacto FkJ5Fvr3tZABZYW8WYzi publicado en stream stream:location:7a61hI3FXzLOu0RP9K2I:workflow:ab495965-95f0-485c-8256-09271aa3c4aa con ID 1752953314630-0
+🗑️ Contacto FkJ5Fvr3tZABZYW8WYzi eliminado de sequential_queue
+🔄 Procesando 1 contactos listos desde PostgreSQL
+🚀 Contacto yFD3ZOPemeEhHXYdmLUL publicado en stream stream:location:ZoE6DWxoImg4w5dIYpsg:workflow:c438717a-6547-4373-9b7c-cb5acaacf966 con ID 1752953319658-0
+🗑️ Contacto yFD3ZOPemeEhHXYdmLUL eliminado de sequential_queue
+🔄 Procesando 1 contactos listos desde PostgreSQL
+🚀 Contacto 4jz31b2k8y10q9uLDyMo publicado en stream stream:location:WV2pjRuxIALjQUMswjKL:workflow:23beeae7-715f-42ea-a1f4-0ddc716023af con ID 1752953321675-0
+🗑️ Contacto 4jz31b2k8y10q9uLDyMo eliminado de sequential_queue
+🔄 Procesando 1 contactos listos desde PostgreSQL
+🚀 Contacto 39EVj3Z3GcceMjhvN8EQ publicado en stream stream:location:6x2rKjW2FynYffwMABlm:workflow:a70485d8-64aa-44f1-b869-42ef66a5eae5 con ID 1752953323692-0
+🗑️ Contacto 39EVj3Z3GcceMjhvN8EQ eliminado de sequential_queue
+🔄 Procesando 1 contactos listos desde PostgreSQL
+🚀 Contacto LdLLngZXcvD7FZdoxk45 publicado en stream stream:location:brx4IqWlCYpGp3qdLXhZ:workflow:babdf350-d4f6-4db2-8d0f-f59624b47baf con ID 1752953328726-0
+🗑️ Contacto LdLLngZXcvD7FZdoxk45 eliminado de sequential_queue
+🔄 Procesando 1 contactos listos desde PostgreSQL
+🚀 Contacto 55NH3kyqVTP8UQ9qW6Ib publicado en stream stream:location:4H6ZW0AZqLvB6TR9Che5:workflow:f460006a-ad3c-4acd-be44-12033556c48c con ID 1752953339795-0
+🗑️ Contacto 55NH3kyqVTP8UQ9qW6Ib eliminado de sequential_queue
+🔄 Procesando 1 contactos listos desde PostgreSQL
+🚀 Contacto gYDVFvKV1uQOpzfHUA9W publicado en stream stream:location:fgK4QNPrkW9TsnxdOLjN:workflow:b1961631-4fd8-4e89-beaa-1033bd13641b con ID 1752953344829-0
+🗑️ Contacto gYDVFvKV1uQOpzfHUA9W eliminado de sequential_queue
+🔄 Procesando 1 contactos listos desde PostgreSQL
+🚀 Contacto hn3ngrYG5eR6pOh2e7px publicado en stream stream:location:9PUaphRdOzEimEagkOor:workflow:f441b332-0084-40c0-9090-f0226c4879e4 con ID 1752953346848-0
+🗑️ Contacto hn3ngrYG5eR6pOh2e7px eliminado de sequential_queue
+🔄 Procesando 1 contactos listos desde PostgreSQL
+🚀 Contacto M0Lc9DxfO1my1lyIS8fb publicado en stream stream:location:9Vpsyw2NXPYkQsyLUv3R:workflow:275a3a07-cca0-4649-8df5-024b2e75beeb con ID 1752953347859-0
+🗑️ Contacto M0Lc9DxfO1my1lyIS8fb eliminado de sequential_queue
+🔄 Procesando 1 contactos listos desde PostgreSQL
+🚀 Contacto bFDSPBZI0r4PjKzHaXKM publicado en stream stream:location:UkU0lUP0b6J6R5E73pwg:workflow:09d0bde5-c953-4191-9819-c3c1868f00b9 con ID 1752953354947-0
+🗑️ Contacto bFDSPBZI0r4PjKzHaXKM eliminado de sequential_queue
+🔄 Procesando 2 contactos listos desde PostgreSQL
+🚀 Contacto yB2NIsuo5C2fTPVoa2a1 publicado en stream stream:location:6tcpYJQrxGJnKfr9T6FE:workflow:519b758b-7ece-4269-b94e-5f365353cddf con ID 1752953355960-0
+🗑️ Contacto yB2NIsuo5C2fTPVoa2a1 eliminado de sequential_queue
+🚀 Contacto T0BroHNamz9xV8S50J6o publicado en stream stream:location:6x2rKjW2FynYffwMABlm:workflow:a70485d8-64aa-44f1-b869-42ef66a5eae5 con ID 1752953355967-0
+🗑️ Contacto T0BroHNamz9xV8S50J6o eliminado de sequential_queue
+🔄 Procesando 1 contactos listos desde PostgreSQL
+🚀 Contacto ac8Sx6PbFTshbqCTFcJd publicado en stream stream:location:6d6IGXqPBG4y9znTo3Py:workflow:70a1191a-fbb0-4070-833e-e563814a743d con ID 1752953366031-0
+🗑️ Contacto ac8Sx6PbFTshbqCTFcJd eliminado de sequential_queue
+🔄 Procesando 1 contactos listos desde PostgreSQL
+🚀 Contacto fzJ0x8XtM8JJ9YqEkWP9 publicado en stream stream:location:4H6ZW0AZqLvB6TR9Che5:workflow:8e1e003d-cb07-4431-b985-d3a20bc67c32 con ID 1752953368049-0
+🗑️ Contacto fzJ0x8XtM8JJ9YqEkWP9 eliminado de sequential_queue
+🔄 Procesando 1 contactos listos desde PostgreSQL
+🚀 Contacto B26ozhwcQIpMEmS4oTAv publicado en stream stream:location:1S10zJ9qXEqEZeDMBex7:workflow:0cbe6cd7-7615-4f94-a1a1-f6d8984a7d7e con ID 1752953384142-0
+🗑️ Contacto B26ozhwcQIpMEmS4oTAv eliminado de sequential_queue
+🔄 Procesando 1 contactos listos desde PostgreSQL
+🚀 Contacto rXWWp4pTMg7ZqHXc4JST publicado en stream stream:location:brx4IqWlCYpGp3qdLXhZ:workflow:babdf350-d4f6-4db2-8d0f-f59624b47baf con ID 1752953392192-0
+🗑️ Contacto rXWWp4pTMg7ZqHXc4JST eliminado de sequential_queue
+🔄 Procesando 2 contactos listos desde PostgreSQL
+🚀 Contacto M7WwEGNQWNCFupcRJCY0 publicado en stream stream:location:fgK4QNPrkW9TsnxdOLjN:workflow:b1961631-4fd8-4e89-beaa-1033bd13641b con ID 1752953394213-0
+🗑️ Contacto M7WwEGNQWNCFupcRJCY0 eliminado de sequential_queue
+🚀 Contacto 45zWfwY8KuFWvGKLCU35 publicado en stream stream:location:WV2pjRuxIALjQUMswjKL:workflow:23beeae7-715f-42ea-a1f4-0ddc716023af con ID 1752953394221-0
+🗑️ Contacto 45zWfwY8KuFWvGKLCU35 eliminado de sequential_queue
+🔄 Procesando 1 contactos listos desde PostgreSQL
+🚀 Contacto FFcfMRLmRqjAV0oywkDW publicado en stream stream:location:x8uQoTUTSGKozjHcabM1:workflow:877ca930-56ff-4add-b740-015f69f32606 con ID 1752953405287-0
+🗑️ Contacto FFcfMRLmRqjAV0oywkDW eliminado de sequential_queue
+🔄 Procesando 3 contactos listos desde PostgreSQL
+🚀 Contacto 4SF4LYs1QdeKFSRWQKKt publicado en stream stream:location:VqhSluUEcTuoXitdwqPy:workflow:06d4f862-1643-4afe-bab0-bcf88382dd70 con ID 1752953407310-0
+🗑️ Contacto 4SF4LYs1QdeKFSRWQKKt eliminado de sequential_queue
+🚀 Contacto cRVuJZ15qf8vXA0IxghY publicado en stream stream:location:6x2rKjW2FynYffwMABlm:workflow:a70485d8-64aa-44f1-b869-42ef66a5eae5 con ID 1752953407317-0
+🗑️ Contacto cRVuJZ15qf8vXA0IxghY eliminado de sequential_queue
+🚀 Contacto ZxAWvrzrjOg4EEgHSzEk publicado en stream stream:location:9Vpsyw2NXPYkQsyLUv3R:workflow:275a3a07-cca0-4649-8df5-024b2e75beeb con ID 1752953407327-0
+🗑️ Contacto ZxAWvrzrjOg4EEgHSzEk eliminado de sequential_queue
+🔄 Procesando 1 contactos listos desde PostgreSQL
+🚀 Contacto eZ0Gcdh1t2ci0Df1zGUk publicado en stream stream:location:UkU0lUP0b6J6R5E73pwg:workflow:09d0bde5-c953-4191-9819-c3c1868f00b9 con ID 1752953419394-0
+🗑️ Contacto eZ0Gcdh1t2ci0Df1zGUk eliminado de sequential_queue
+🔄 Procesando 1 contactos listos desde PostgreSQL
+🚀 Contacto yCjXPLLfu88VJX8txf0w publicado en stream stream:location:6tcpYJQrxGJnKfr9T6FE:workflow:519b758b-7ece-4269-b94e-5f365353cddf con ID 1752953424431-0
+🗑️ Contacto yCjXPLLfu88VJX8txf0w eliminado de sequential_queue
+🔄 Procesando 1 contactos listos desde PostgreSQL
+🚀 Contacto wIQl7TDIC4k077n35XJE publicado en stream stream:location:4H6ZW0AZqLvB6TR9Che5:workflow:f460006a-ad3c-4acd-be44-12033556c48c con ID 1752953430470-0
+🗑️ Contacto wIQl7TDIC4k077n35XJE eliminado de sequential_queue
+🔄 Procesando 1 contactos listos desde PostgreSQL
+🚀 Contacto t9DzcWrnY3ueOnGbcJXR publicado en stream stream:location:9PUaphRdOzEimEagkOor:workflow:f441b332-0084-40c0-9090-f0226c4879e4 con ID 1752953435509-0
+🗑️ Contacto t9DzcWrnY3ueOnGbcJXR eliminado de sequential_queue
+🔄 Procesando 1 contactos listos desde PostgreSQL
+🚀 Contacto X4G7u56wmF4DmyiWxnmi publicado en stream stream:location:ZoE6DWxoImg4w5dIYpsg:workflow:c438717a-6547-4373-9b7c-cb5acaacf966 con ID 1752953436521-0
+🗑️ Contacto X4G7u56wmF4DmyiWxnmi eliminado de sequential_queue
+🔄 Procesando 1 contactos listos desde PostgreSQL
+🚀 Contacto BCvqzl3B4mHkr391E7TU publicado en stream stream:location:6x2rKjW2FynYffwMABlm:workflow:a70485d8-64aa-44f1-b869-42ef66a5eae5 con ID 1752953445575-0
+🗑️ Contacto BCvqzl3B4mHkr391E7TU eliminado de sequential_queue
+🔄 Procesando 1 contactos listos desde PostgreSQL
+🚀 Contacto 0agMepqIE6lJxMiHT7np publicado en stream stream:location:4H6ZW0AZqLvB6TR9Che5:workflow:8e1e003d-cb07-4431-b985-d3a20bc67c32 con ID 1752953452619-0
+🗑️ Contacto 0agMepqIE6lJxMiHT7np eliminado de sequential_queue
+🔄 Procesando 1 contactos listos desde PostgreSQL
+🚀 Contacto 1VzBvvZt0040w3DITYVs publicado en stream stream:location:1S10zJ9qXEqEZeDMBex7:workflow:0cbe6cd7-7615-4f94-a1a1-f6d8984a7d7e con ID 1752953454636-0
+🗑️ Contacto 1VzBvvZt0040w3DITYVs eliminado de sequential_queue
+🔄 Procesando 2 contactos listos desde PostgreSQL
+🚀 Contacto 6UXkl3l85PCVqYKu6h2h publicado en stream stream:location:7a61hI3FXzLOu0RP9K2I:workflow:ab495965-95f0-485c-8256-09271aa3c4aa con ID 1752953455649-0
+🗑️ Contacto 6UXkl3l85PCVqYKu6h2h eliminado de sequential_queue
+🚀 Contacto BZKWdItq0HWjoFCkmI1w publicado en stream stream:location:Tmqk8opPQUReQ4eQNcPI:workflow:134673f7-35c2-4dce-b75e-0ac9342db131 con ID 1752953455656-0
+🗑️ Contacto BZKWdItq0HWjoFCkmI1w eliminado de sequential_queue
+🔄 Procesando 1 contactos listos desde PostgreSQL
+🚀 Contacto oaPbCBQmQa5a1uelJjmk publicado en stream stream:location:brx4IqWlCYpGp3qdLXhZ:workflow:babdf350-d4f6-4db2-8d0f-f59624b47baf con ID 1752953459684-0
+🗑️ Contacto oaPbCBQmQa5a1uelJjmk eliminado de sequential_queue
+🔄 Procesando 1 contactos listos desde PostgreSQL
+🚀 Contacto kpWL3lc7HFbb2PArtUdV publicado en stream stream:location:WV2pjRuxIALjQUMswjKL:workflow:23beeae7-715f-42ea-a1f4-0ddc716023af con ID 1752953469743-0
+🗑️ Contacto kpWL3lc7HFbb2PArtUdV eliminado de sequential_queue
+🔄 Procesando 1 contactos listos desde PostgreSQL
+🚀 Contacto OgONVqUPvsvPONPcReMB publicado en stream stream:location:fgK4QNPrkW9TsnxdOLjN:workflow:b1961631-4fd8-4e89-beaa-1033bd13641b con ID 1752953479801-0
+🗑️ Contacto OgONVqUPvsvPONPcReMB eliminado de sequential_queue
+🔄 Procesando 2 contactos listos desde PostgreSQL
+🚀 Contacto 9bIY2R8iy3QWVMyP7Svx publicado en stream stream:location:6x2rKjW2FynYffwMABlm:workflow:a70485d8-64aa-44f1-b869-42ef66a5eae5 con ID 1752953483834-0
+🗑️ Contacto 9bIY2R8iy3QWVMyP7Svx eliminado de sequential_queue
+🚀 Contacto 6C5ef2rgeHICnHKdhKtS publicado en stream stream:location:x8uQoTUTSGKozjHcabM1:workflow:877ca930-56ff-4add-b740-015f69f32606 con ID 1752953483842-0
+🗑️ Contacto 6C5ef2rgeHICnHKdhKtS eliminado de sequential_queue
+🔄 Procesando 1 contactos listos desde PostgreSQL
+🚀 Contacto zWGRbC3gRWSpLByi7Fu2 publicado en stream stream:location:4H6ZW0AZqLvB6TR9Che5:workflow:f460006a-ad3c-4acd-be44-12033556c48c con ID 1752953494907-0
+🗑️ Contacto zWGRbC3gRWSpLByi7Fu2 eliminado de sequential_queue
+🔄 Procesando 1 contactos listos desde PostgreSQL
+🚀 Contacto ZxAWvrzrjOg4EEgHSzEk publicado en stream stream:location:9Vpsyw2NXPYkQsyLUv3R:workflow:275a3a07-cca0-4649-8df5-024b2e75beeb con ID 1752953496925-0
+🗑️ Contacto ZxAWvrzrjOg4EEgHSzEk eliminado de sequential_queue
+🔄 Procesando 1 contactos listos desde PostgreSQL
+🚀 Contacto PLbI89TlFuHdVBWM6scL publicado en stream stream:location:UkU0lUP0b6J6R5E73pwg:workflow:09d0bde5-c953-4191-9819-c3c1868f00b9 con ID 1752953499955-0
+🗑️ Contacto PLbI89TlFuHdVBWM6scL eliminado de sequential_queue
+🔄 Procesando 1 contactos listos desde PostgreSQL
+🚀 Contacto Rwc9uoNGUzUmwx1FN0vO publicado en stream stream:location:pnOXgRugE5VIP5b0evyY:workflow:40546385-f91d-4af1-a10f-b8c06c424215 con ID 1752953502978-0
+🗑️ Contacto Rwc9uoNGUzUmwx1FN0vO eliminado de sequential_queue
+🔄 Procesando 1 contactos listos desde PostgreSQL
+🚀 Contacto YsmV7TFQ5U3lF27sNqPc publicado en stream stream:location:ZoE6DWxoImg4w5dIYpsg:workflow:c438717a-6547-4373-9b7c-cb5acaacf966 con ID 1752953519071-0
+🗑️ Contacto YsmV7TFQ5U3lF27sNqPc eliminado de sequential_queue
+🔄 Procesando 1 contactos listos desde PostgreSQL
+🚀 Contacto Ly6o7zZHRVoXJd4QhL2M publicado en stream stream:location:6x2rKjW2FynYffwMABlm:workflow:a70485d8-64aa-44f1-b869-42ef66a5eae5 con ID 1752953520085-0
+🗑️ Contacto Ly6o7zZHRVoXJd4QhL2M eliminado de sequential_queue
+🔄 Procesando 1 contactos listos desde PostgreSQL
+🚀 Contacto RePha14JHQnUcQrowcDI publicado en stream stream:location:1S10zJ9qXEqEZeDMBex7:workflow:0cbe6cd7-7615-4f94-a1a1-f6d8984a7d7e con ID 1752953521097-0
+🗑️ Contacto RePha14JHQnUcQrowcDI eliminado de sequential_queue
+🔄 Procesando 1 contactos listos desde PostgreSQL
+🚀 Contacto rAFhtfAPVrmQu8VCDMqb publicado en stream stream:location:fgK4QNPrkW9TsnxdOLjN:workflow:b1961631-4fd8-4e89-beaa-1033bd13641b con ID 1752953523115-0
+🗑️ Contacto rAFhtfAPVrmQu8VCDMqb eliminado de sequential_queue
+🔄 Procesando 1 contactos listos desde PostgreSQL
+🚀 Contacto K2eFdmrJzGgSZzw6X6ZI publicado en stream stream:location:usZYrMSwAyYPnVKo3MMM:workflow:a71566e6-e5fe-4bad-ba80-d534df225d0e con ID 1752953526138-0
+🗑️ Contacto K2eFdmrJzGgSZzw6X6ZI eliminado de sequential_queue
+🔄 Procesando 2 contactos listos desde PostgreSQL
+🚀 Contacto YXXRH9bj9AeuJv17krui publicado en stream stream:location:9Vpsyw2NXPYkQsyLUv3R:workflow:275a3a07-cca0-4649-8df5-024b2e75beeb con ID 1752953529160-0
+🗑️ Contacto YXXRH9bj9AeuJv17krui eliminado de sequential_queue
+🚀 Contacto yHJNImGs41RlgYR2xdB7 publicado en stream stream:location:6tcpYJQrxGJnKfr9T6FE:workflow:519b758b-7ece-4269-b94e-5f365353cddf con ID 1752953529168-0
+🗑️ Contacto yHJNImGs41RlgYR2xdB7 eliminado de sequential_queue
+🔄 Procesando 1 contactos listos desde PostgreSQL
+🚀 Contacto HRdhiDC2Hb4xypRkg80r publicado en stream stream:location:brx4IqWlCYpGp3qdLXhZ:workflow:babdf350-d4f6-4db2-8d0f-f59624b47baf con ID 1752953531185-0
+🗑️ Contacto HRdhiDC2Hb4xypRkg80r eliminado de sequential_queue
+🔄 Procesando 1 contactos listos desde PostgreSQL
+🚀 Contacto e3qQdCP9rUCR9eiID0YE publicado en stream stream:location:7a61hI3FXzLOu0RP9K2I:workflow:ab495965-95f0-485c-8256-09271aa3c4aa con ID 1752953534210-0
+🗑️ Contacto e3qQdCP9rUCR9eiID0YE eliminado de sequential_queue
+🔄 Procesando 1 contactos listos desde PostgreSQL
+🚀 Contacto nbGEE1ptfLLI4IuDnDCD publicado en stream stream:location:4H6ZW0AZqLvB6TR9Che5:workflow:8e1e003d-cb07-4431-b985-d3a20bc67c32 con ID 1752953542256-0
+🗑️ Contacto nbGEE1ptfLLI4IuDnDCD eliminado de sequential_queue
+🔄 Procesando 1 contactos listos desde PostgreSQL
+🚀 Contacto fsdJTmUY0pHwfB8A7527 publicado en stream stream:location:WV2pjRuxIALjQUMswjKL:workflow:23beeae7-715f-42ea-a1f4-0ddc716023af con ID 1752953546282-0
+🗑️ Contacto fsdJTmUY0pHwfB8A7527 eliminado de sequential_queue
+🔄 Procesando 1 contactos listos desde PostgreSQL
+🚀 Contacto tii7DFVcdr8Xhb22QgBc publicado en stream stream:location:UkU0lUP0b6J6R5E73pwg:workflow:09d0bde5-c953-4191-9819-c3c1868f00b9 con ID 1752953560359-0
+🗑️ Contacto tii7DFVcdr8Xhb22QgBc eliminado de sequential_queue
+🔄 Procesando 1 contactos listos desde PostgreSQL
+🚀 Contacto PG3ycarHCfx9MFKhQINw publicado en stream stream:location:6FLlb0KNv3ObecveuXTf:workflow:3cc3a191-b24f-4837-bac3-5939b15295e4 con ID 1752953563380-0
+🗑️ Contacto PG3ycarHCfx9MFKhQINw eliminado de sequential_queue
+🔄 Procesando 2 contactos listos desde PostgreSQL
+🚀 Contacto t2v6upLS2Qj09Icw30Hn publicado en stream stream:location:6x2rKjW2FynYffwMABlm:workflow:a70485d8-64aa-44f1-b869-42ef66a5eae5 con ID 1752953573438-0
+🗑️ Contacto t2v6upLS2Qj09Icw30Hn eliminado de sequential_queue
+🚀 Contacto h0qjDgrt4eOmlJ3VwVSq publicado en stream stream:location:fgK4QNPrkW9TsnxdOLjN:workflow:b1961631-4fd8-4e89-beaa-1033bd13641b con ID 1752953573445-0
+🗑️ Contacto h0qjDgrt4eOmlJ3VwVSq eliminado de sequential_queue
