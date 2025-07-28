@@ -11,6 +11,10 @@ const errorTracker = new Map<string, { count: number; lastReset: number }>();
 const ALERT_THRESHOLD = 5; // 5 errores 401 del mismo location
 const RESET_INTERVAL = 10 * 60 * 1000; // 10 minutos
 
+// Constantes para el bloqueo distribuido
+const LOCK_KEY_PREFIX = 'stream-lock';
+const LOCK_TTL_MS = 30000; // 30 segundos
+
 // Configurar nodemailer (usar Gmail como ejemplo)
 const transporter = nodemailer.createTransport({
   service: 'gmail',
@@ -94,6 +98,7 @@ class StreamManager {
   private streamStatus = new Map<string, {
     lastActivity: number;    // Timestamp de última actividad
     emptyChecks: number;     // Conteo de verificaciones vacías consecutivas
+    lockKey: string; // Key para el bloqueo distribuido
   }>();
   
   // Tiempo máximo de inactividad (5 minutos)
@@ -111,20 +116,38 @@ class StreamManager {
     if (this.activeStreams.has(streamName)) {
       return true;
     }
+
+    const lockKey = `${LOCK_KEY_PREFIX}:${streamName}`;
     
     try {
+      // 1. Intentar adquirir el lock
+      const lockAcquired = await redisClient.set(lockKey, WORKER_ID, 'PX', LOCK_TTL_MS, 'NX');
+      
+      if (!lockAcquired) {
+        // console.log(`[LOCK] Stream ${streamName} ya está siendo procesado por otro worker.`);
+        return false; // No se pudo adquirir el lock
+      }
+      
+      // 2. Si se adquiere el lock, proceder con la activación
+      // console.log(`[LOCK] Lock adquirido para ${streamName} por ${WORKER_ID}`);
+      
       // Crear consumer group (con MKSTREAM)
       const created = await createConsumerGroup(streamName, CONSUMER_GROUP);
-      if (!created) return false;
+      if (!created) {
+        // Si no se pudo crear el stream, liberar el lock
+        await this.releaseLock(lockKey);
+        return false;
+      }
       
       // Marcar como activo
       this.activeStreams.set(streamName, true);
       this.streamStatus.set(streamName, {
         lastActivity: Date.now(),
-        emptyChecks: 0
+        emptyChecks: 0,
+        lockKey: lockKey // Guardar el lockKey
       });
       
-      console.log(`🟢 Stream ${streamName} activado`);
+      console.log(`🟢 Stream ${streamName} activado por ${WORKER_ID}`);
       
       // Iniciar procesamiento en background
       this.startProcessing(streamName);
@@ -132,19 +155,50 @@ class StreamManager {
       return true;
     } catch (error) {
       console.error(`Error activando stream ${streamName}:`, error);
+      // En caso de error, intentar liberar el lock si lo teníamos
+      await this.releaseLock(lockKey);
       return false;
     }
   }
   
   /**
-   * Desactiva un stream, liberando recursos
+   * Libera un lock si y solo si este worker es el propietario.
+   * @param lockKey La key del lock a liberar.
+   */
+  private async releaseLock(lockKey: string): Promise<void> {
+    try {
+      // LUA script para borrado atómico
+      const script = `
+        if redis.call("get", KEYS[1]) == ARGV[1] then
+          return redis.call("del", KEYS[1])
+        else
+          return 0
+        end
+      `;
+      await redisClient.eval(script, 1, lockKey, WORKER_ID);
+      // console.log(`[LOCK] Lock liberado para ${lockKey} por ${WORKER_ID}`);
+    } catch (error) {
+      console.error(`[LOCK] Error liberando lock ${lockKey}:`, error);
+    }
+  }
+
+  /**
+   * Desactiva un stream, liberando recursos y el lock.
    * @param streamName Nombre del stream a desactivar
    */
   deactivateStream(streamName: string): void {
-    if (this.activeStreams.has(streamName)) {
+    const status = this.streamStatus.get(streamName);
+    const wasActive = this.activeStreams.has(streamName);
+    
+    if (wasActive) {
       this.activeStreams.delete(streamName);
       this.streamStatus.delete(streamName);
-      console.log(`🔴 Stream ${streamName} desactivado por inactividad`);
+      console.log(`🔴 Stream ${streamName} desactivado por inactividad.`);
+      
+      // Liberar el lock asociado
+      if (status && status.lockKey) {
+        this.releaseLock(status.lockKey);
+      }
     }
   }
   
@@ -197,6 +251,10 @@ class StreamManager {
               // Actualizar métricas - actividad reciente
               status.lastActivity = Date.now();
               status.emptyChecks = 0;
+
+              // Refrescar el lock para mantener la propiedad
+              await redisClient.pexpire(status.lockKey, LOCK_TTL_MS);
+              
               continue; // Continuar inmediatamente al siguiente mensaje
             }
           }
@@ -218,6 +276,9 @@ class StreamManager {
                 console.log(`💤 Stream ${streamName} inactivo por ${Math.floor(inactivityTime/1000)}s, liberando recursos`);
                 this.deactivateStream(streamName);
                 break; // Salir del bucle while
+              } else {
+                // Si no vamos a desactivar, al menos refrescamos el lock
+                await redisClient.pexpire(status.lockKey, LOCK_TTL_MS);
               }
             }
           } catch (pendingError) {
@@ -264,7 +325,7 @@ class StreamManager {
       
       // Log conservador (solo si hay streams activos)
       if (this.activeStreams.size > 0) {
-        console.log(`🔄 Procesando ${this.activeStreams.size} streams actualmente`);
+        console.log(`🔄 [${WORKER_ID}] Procesando ${this.activeStreams.size} streams: ${Array.from(this.activeStreams.keys()).join(', ')}`);
       }
     } catch (error) {
       console.error('❌ Error buscando streams activos:', error);
