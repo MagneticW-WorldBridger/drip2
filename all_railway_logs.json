@@ -1,0 +1,130 @@
+{"message":"Starting Container","timestamp":"2025-07-28T14:23:58.000000000Z","level":"info"}
+{"level":"info","message":"🆔 Worker ID: worker-78da5b64","timestamp":"2025-07-28T14:23:58.628676182Z"}
+{"timestamp":"2025-07-28T14:23:58.628689781Z","message":"🚀 Worker iniciando...","level":"info"}
+{"level":"info","timestamp":"2025-07-28T14:23:58.628707815Z","message":"🟢 Stream stream:location:gkBdvhVKCWqvMBk0jBU4:workflow:57733ebc-fbf9-4881-ada6-8e38e5e79a69 activado"}
+{"timestamp":"2025-07-28T14:23:58.628724338Z","level":"info","message":"🟢 Stream stream:location:brx4IqWlCYpGp3qdLXhZ:workflow:babdf350-d4f6-4db2-8d0f-f59624b47baf activado"}
+{"level":"info","timestamp":"2025-07-28T14:23:58.628740683Z","message":"🟢 Stream stream:location:C5J8QZce5oHFdB5SjcXT:workflow:a3c923df-7443-451e-88e8-6353c55e2f3b activado"}
+{"message":"🟢 Stream stream:location:svq4JFmFmE7CzLQ6kwiD:workflow:cf6faaff-109b-4062-acaf-8383da78597c activado","timestamp":"2025-07-28T14:23:58.628755806Z","level":"info"}
+{"level":"info","message":"🟢 Stream stream:location:4H6ZW0AZqLvB6TR9Che5:workflow:f460006a-ad3c-4acd-be44-12033556c48c activado","timestamp":"2025-07-28T14:23:58.628786247Z"}
+{"message":"🟢 Stream stream:location:0ISDuXOk6ygGvyT7W6mC:workflow:b9138997-bc08-43b7-8cc4-4a502892eaf3 activado","timestamp":"2025-07-28T14:23:58.628805733Z","level":"info"}
+{"message":"🔄 Procesando 6 streams actualmente","level":"info","timestamp":"2025-07-28T14:24:18.621041015Z"}
+{"timestamp":"2025-07-28T14:24:18.621073816Z","message":"🟢 Stream stream:location:gkBdvhVKCWqvMBk0jBU4:workflow:594c5a61-b109-4daf-b367-0e508733c3a4 activado","level":"info"}
+{"message":"🔄 Procesando 7 streams actualmente","timestamp":"2025-07-28T14:24:28.566485610Z","level":"info"}
+{"level":"info","message":"🔄 Procesando 7 streams actualmente","timestamp":"2025-07-28T14:24:48.573735549Z"}
+{"message":"🟢 Stream stream:location:tF9LFj7x8T8jaAnznN0I:workflow:f6d922fd-7264-4e02-b2f9-23973d29e514 activado","timestamp":"2025-07-28T14:24:48.573759214Z","level":"info"}
+{"level":"info","timestamp":"2025-07-28T14:25:08.574531735Z","message":"🔄 Procesando 8 streams actualmente"}
+{"level":"info","message":"🔄 Procesando 8 streams actualmente","timestamp":"2025-07-28T14:25:13.666935078Z"}
+{"message":"🔄 Procesando 8 streams actualmente","timestamp":"2025-07-28T14:25:33.653198086Z","level":"info"}
+{"timestamp":"2025-07-28T14:25:53.625254255Z","level":"info","message":"🔄 Procesando 8 streams actualmente"}
+{"message":"🔄 Procesando 8 streams actualmente","level":"info","timestamp":"2025-07-28T14:25:58.790486674Z"}
+{"timestamp":"2025-07-28T14:25:58.790512262Z","message":"🟢 Stream stream:location:9Vpsyw2NXPYkQsyLUv3R:workflow:275a3a07-cca0-4649-8df5-024b2e75beeb activado","level":"info"}
+{"message":"🔄 Procesando 9 streams actualmente","level":"info","timestamp":"2025-07-28T14:26:18.785858507Z"}
+{"timestamp":"2025-07-28T14:26:38.788620305Z","level":"info","message":"🔄 Procesando 9 streams actualmente"}
+{"timestamp":"2025-07-28T14:26:43.970651806Z","level":"info","message":"🔄 Procesando 9 streams actualmente"}
+{"message":"🔄 Procesando 9 streams actualmente","timestamp":"2025-07-28T14:27:04.074751749Z","level":"info"}
+{"message":"🔄 Procesando 9 streams actualmente","timestamp":"2025-07-28T14:27:23.946385393Z","level":"info"}
+{"level":"info","timestamp":"2025-07-28T14:27:23.946406665Z","message":"🟢 Stream stream:location:C5J8QZce5oHFdB5SjcXT:workflow:849cf4c6-9fdd-4f6e-bc3b-377e02d29caa activado"}
+{"timestamp":"2025-07-28T14:27:29.191945383Z","level":"info","message":"🔄 Procesando 10 streams actualmente"}
+{"message":"🔄 Procesando 10 streams actualmente","level":"info","timestamp":"2025-07-28T14:27:49.186927348Z"}
+{"level":"info","message":"🔄 Procesando 10 streams actualmente","timestamp":"2025-07-28T14:28:09.211320865Z"}
+{"level":"info","message":"🔄 Procesando 10 streams actualmente","timestamp":"2025-07-28T14:28:14.386036467Z"}
+{"timestamp":"2025-07-28T14:28:34.392008023Z","level":"info","message":"🔄 Procesando 10 streams actualmente"}
+{"timestamp":"2025-07-28T14:28:54.400008931Z","level":"info","message":"🔄 Procesando 10 streams actualmente"}
+{"timestamp":"2025-07-28T14:28:58.521572969Z","level":"info","message":"💤 Stream stream:location:gkBdvhVKCWqvMBk0jBU4:workflow:57733ebc-fbf9-4881-ada6-8e38e5e79a69 inactivo por 300s, liberando recursos"}
+{"timestamp":"2025-07-28T14:28:58.521608247Z","level":"info","message":"🔴 Stream stream:location:gkBdvhVKCWqvMBk0jBU4:workflow:57733ebc-fbf9-4881-ada6-8e38e5e79a69 desactivado por inactividad"}
+{"timestamp":"2025-07-28T14:28:58.521634093Z","message":"💤 Stream stream:location:brx4IqWlCYpGp3qdLXhZ:workflow:babdf350-d4f6-4db2-8d0f-f59624b47baf inactivo por 300s, liberando recursos","level":"info"}
+{"level":"info","message":"🔴 Stream stream:location:brx4IqWlCYpGp3qdLXhZ:workflow:babdf350-d4f6-4db2-8d0f-f59624b47baf desactivado por inactividad","timestamp":"2025-07-28T14:28:58.521683962Z"}
+{"timestamp":"2025-07-28T14:28:58.521712583Z","message":"💤 Stream stream:location:C5J8QZce5oHFdB5SjcXT:workflow:a3c923df-7443-451e-88e8-6353c55e2f3b inactivo por 300s, liberando recursos","level":"info"}
+{"timestamp":"2025-07-28T14:28:58.521736976Z","level":"info","message":"🔴 Stream stream:location:C5J8QZce5oHFdB5SjcXT:workflow:a3c923df-7443-451e-88e8-6353c55e2f3b desactivado por inactividad"}
+{"message":"💤 Stream stream:location:svq4JFmFmE7CzLQ6kwiD:workflow:cf6faaff-109b-4062-acaf-8383da78597c inactivo por 300s, liberando recursos","level":"info","timestamp":"2025-07-28T14:28:58.521767805Z"}
+{"message":"🔴 Stream stream:location:svq4JFmFmE7CzLQ6kwiD:workflow:cf6faaff-109b-4062-acaf-8383da78597c desactivado por inactividad","timestamp":"2025-07-28T14:28:58.521791572Z","level":"info"}
+{"timestamp":"2025-07-28T14:28:58.521814735Z","message":"💤 Stream stream:location:4H6ZW0AZqLvB6TR9Che5:workflow:f460006a-ad3c-4acd-be44-12033556c48c inactivo por 300s, liberando recursos","level":"info"}
+{"level":"info","message":"🔴 Stream stream:location:4H6ZW0AZqLvB6TR9Che5:workflow:f460006a-ad3c-4acd-be44-12033556c48c desactivado por inactividad","timestamp":"2025-07-28T14:28:58.521838020Z"}
+{"timestamp":"2025-07-28T14:28:58.521862081Z","message":"💤 Stream stream:location:0ISDuXOk6ygGvyT7W6mC:workflow:b9138997-bc08-43b7-8cc4-4a502892eaf3 inactivo por 300s, liberando recursos","level":"info"}
+{"level":"info","timestamp":"2025-07-28T14:28:58.521891691Z","message":"🔴 Stream stream:location:0ISDuXOk6ygGvyT7W6mC:workflow:b9138997-bc08-43b7-8cc4-4a502892eaf3 desactivado por inactividad"}
+{"timestamp":"2025-07-28T14:28:59.462497348Z","level":"info","message":"🔄 Procesando 4 streams actualmente"}
+{"level":"info","message":"🟢 Stream stream:location:brx4IqWlCYpGp3qdLXhZ:workflow:babdf350-d4f6-4db2-8d0f-f59624b47baf activado","timestamp":"2025-07-28T14:28:59.466133512Z"}
+{"message":"🟢 Stream stream:location:C5J8QZce5oHFdB5SjcXT:workflow:a3c923df-7443-451e-88e8-6353c55e2f3b activado","timestamp":"2025-07-28T14:28:59.466164573Z","level":"info"}
+{"message":"🟢 Stream stream:location:0ISDuXOk6ygGvyT7W6mC:workflow:b9138997-bc08-43b7-8cc4-4a502892eaf3 activado","timestamp":"2025-07-28T14:28:59.466185125Z","level":"info"}
+{"level":"info","timestamp":"2025-07-28T14:29:19.472826108Z","message":"💤 Stream stream:location:gkBdvhVKCWqvMBk0jBU4:workflow:594c5a61-b109-4daf-b367-0e508733c3a4 inactivo por 300s, liberando recursos"}
+{"message":"🔴 Stream stream:location:gkBdvhVKCWqvMBk0jBU4:workflow:594c5a61-b109-4daf-b367-0e508733c3a4 desactivado por inactividad","timestamp":"2025-07-28T14:29:19.472855521Z","level":"info"}
+{"level":"info","timestamp":"2025-07-28T14:29:19.472872360Z","message":"🔄 Procesando 6 streams actualmente"}
+{"level":"info","message":"🔄 Procesando 6 streams actualmente","timestamp":"2025-07-28T14:29:39.469558023Z"}
+{"message":"🟢 Stream stream:location:4H6ZW0AZqLvB6TR9Che5:workflow:f460006a-ad3c-4acd-be44-12033556c48c activado","level":"info","timestamp":"2025-07-28T14:29:39.469571800Z"}
+{"timestamp":"2025-07-28T14:29:43.596834884Z","level":"info","message":"💤 Stream stream:location:tF9LFj7x8T8jaAnznN0I:workflow:f6d922fd-7264-4e02-b2f9-23973d29e514 inactivo por 300s, liberando recursos"}
+{"timestamp":"2025-07-28T14:29:43.596859048Z","level":"info","message":"🔴 Stream stream:location:tF9LFj7x8T8jaAnznN0I:workflow:f6d922fd-7264-4e02-b2f9-23973d29e514 desactivado por inactividad"}
+{"message":"🔄 Procesando 6 streams actualmente","timestamp":"2025-07-28T14:29:44.609241106Z","level":"info"}
+{"timestamp":"2025-07-28T14:29:44.609265984Z","level":"info","message":"🟢 Stream stream:location:gkBdvhVKCWqvMBk0jBU4:workflow:57733ebc-fbf9-4881-ada6-8e38e5e79a69 activado"}
+{"timestamp":"2025-07-28T14:29:44.609286670Z","message":"🟢 Stream stream:location:gkBdvhVKCWqvMBk0jBU4:workflow:594c5a61-b109-4daf-b367-0e508733c3a4 activado","level":"info"}
+{"level":"info","timestamp":"2025-07-28T14:29:44.609308761Z","message":"🟢 Stream stream:location:svq4JFmFmE7CzLQ6kwiD:workflow:cf6faaff-109b-4062-acaf-8383da78597c activado"}
+{"level":"info","message":"🔄 Procesando 9 streams actualmente","timestamp":"2025-07-28T14:30:04.641717832Z"}
+{"message":"🔄 Procesando 9 streams actualmente","timestamp":"2025-07-28T14:30:24.647829973Z","level":"info"}
+{"level":"info","message":"🟢 Stream stream:location:tF9LFj7x8T8jaAnznN0I:workflow:f6d922fd-7264-4e02-b2f9-23973d29e514 activado","timestamp":"2025-07-28T14:30:24.647859806Z"}
+{"message":"🔄 Procesando 10 streams actualmente","timestamp":"2025-07-28T14:30:29.774659004Z","level":"info"}
+{"message":"🔄 Procesando 10 streams actualmente","timestamp":"2025-07-28T14:30:49.804221591Z","level":"info"}
+{"timestamp":"2025-07-28T14:30:58.776243183Z","level":"info","message":"💤 Stream stream:location:9Vpsyw2NXPYkQsyLUv3R:workflow:275a3a07-cca0-4649-8df5-024b2e75beeb inactivo por 300s, liberando recursos"}
+{"message":"🔴 Stream stream:location:9Vpsyw2NXPYkQsyLUv3R:workflow:275a3a07-cca0-4649-8df5-024b2e75beeb desactivado por inactividad","timestamp":"2025-07-28T14:30:58.776292918Z","level":"info"}
+{"level":"info","message":"🔄 Procesando 9 streams actualmente","timestamp":"2025-07-28T14:30:59.964824886Z"}
+{"timestamp":"2025-07-28T14:30:59.968471904Z","level":"info","message":"🟢 Stream stream:location:9Vpsyw2NXPYkQsyLUv3R:workflow:275a3a07-cca0-4649-8df5-024b2e75beeb activado"}
+{"level":"info","message":"🔄 Procesando 10 streams actualmente","timestamp":"2025-07-28T14:31:19.949874587Z"}
+{"message":"🔄 Procesando 10 streams actualmente","timestamp":"2025-07-28T14:31:39.953134986Z","level":"info"}
+{"level":"info","message":"🔄 Procesando 10 streams actualmente","timestamp":"2025-07-28T14:31:45.097566060Z"}
+{"message":"🔄 Procesando 10 streams actualmente","level":"info","timestamp":"2025-07-28T14:32:05.134903297Z"}
+{"timestamp":"2025-07-28T14:32:14.043999600Z","message":"💤 Stream stream:location:C5J8QZce5oHFdB5SjcXT:workflow:849cf4c6-9fdd-4f6e-bc3b-377e02d29caa inactivo por 300s, liberando recursos","level":"info"}
+{"level":"info","message":"🔴 Stream stream:location:C5J8QZce5oHFdB5SjcXT:workflow:849cf4c6-9fdd-4f6e-bc3b-377e02d29caa desactivado por inactividad","timestamp":"2025-07-28T14:32:14.044027991Z"}
+{"timestamp":"2025-07-28T14:32:15.174388856Z","level":"info","message":"🔄 Procesando 9 streams actualmente"}
+{"timestamp":"2025-07-28T14:32:35.215564687Z","message":"🔄 Procesando 9 streams actualmente","level":"info"}
+{"message":"🔄 Procesando 9 streams actualmente","timestamp":"2025-07-28T14:32:55.213928195Z","level":"info"}
+{"timestamp":"2025-07-28T14:32:55.213952379Z","level":"info","message":"🟢 Stream stream:location:fgK4QNPrkW9TsnxdOLjN:workflow:b1961631-4fd8-4e89-beaa-1033bd13641b activado"}
+{"timestamp":"2025-07-28T14:33:00.288360164Z","message":"🔄 Procesando 10 streams actualmente","level":"info"}
+{"level":"info","message":"🔄 Procesando 10 streams actualmente","timestamp":"2025-07-28T14:33:20.288927411Z"}
+{"timestamp":"2025-07-28T14:33:40.292699785Z","level":"info","message":"🔄 Procesando 10 streams actualmente"}
+{"message":"🔄 Procesando 10 streams actualmente","timestamp":"2025-07-28T14:33:45.418972326Z","level":"info"}
+{"message":"💤 Stream stream:location:0ISDuXOk6ygGvyT7W6mC:workflow:b9138997-bc08-43b7-8cc4-4a502892eaf3 inactivo por 300s, liberando recursos","level":"info","timestamp":"2025-07-28T14:34:05.418319096Z"}
+{"timestamp":"2025-07-28T14:34:05.418340333Z","level":"info","message":"🔴 Stream stream:location:0ISDuXOk6ygGvyT7W6mC:workflow:b9138997-bc08-43b7-8cc4-4a502892eaf3 desactivado por inactividad"}
+{"level":"info","message":"💤 Stream stream:location:brx4IqWlCYpGp3qdLXhZ:workflow:babdf350-d4f6-4db2-8d0f-f59624b47baf inactivo por 300s, liberando recursos","timestamp":"2025-07-28T14:34:05.418356463Z"}
+{"message":"🔴 Stream stream:location:brx4IqWlCYpGp3qdLXhZ:workflow:babdf350-d4f6-4db2-8d0f-f59624b47baf desactivado por inactividad","level":"info","timestamp":"2025-07-28T14:34:05.418370546Z"}
+{"timestamp":"2025-07-28T14:34:05.418383963Z","message":"💤 Stream stream:location:C5J8QZce5oHFdB5SjcXT:workflow:a3c923df-7443-451e-88e8-6353c55e2f3b inactivo por 300s, liberando recursos","level":"info"}
+{"message":"🔴 Stream stream:location:C5J8QZce5oHFdB5SjcXT:workflow:a3c923df-7443-451e-88e8-6353c55e2f3b desactivado por inactividad","timestamp":"2025-07-28T14:34:05.418397002Z","level":"info"}
+{"level":"info","message":"🔄 Procesando 7 streams actualmente","timestamp":"2025-07-28T14:34:05.418408072Z"}
+{"timestamp":"2025-07-28T14:34:05.418420352Z","level":"info","message":"🟢 Stream stream:location:C5J8QZce5oHFdB5SjcXT:workflow:a3c923df-7443-451e-88e8-6353c55e2f3b activado"}
+{"level":"info","message":"🟢 Stream stream:location:0ISDuXOk6ygGvyT7W6mC:workflow:b9138997-bc08-43b7-8cc4-4a502892eaf3 activado","timestamp":"2025-07-28T14:34:05.418445924Z"}
+{"timestamp":"2025-07-28T14:34:25.412869899Z","level":"info","message":"🔄 Procesando 9 streams actualmente"}
+{"level":"info","timestamp":"2025-07-28T14:34:29.557964171Z","message":"💤 Stream stream:location:4H6ZW0AZqLvB6TR9Che5:workflow:f460006a-ad3c-4acd-be44-12033556c48c inactivo por 300s, liberando recursos"}
+{"message":"🔴 Stream stream:location:4H6ZW0AZqLvB6TR9Che5:workflow:f460006a-ad3c-4acd-be44-12033556c48c desactivado por inactividad","timestamp":"2025-07-28T14:34:29.557986166Z","level":"info"}
+{"timestamp":"2025-07-28T14:34:30.503160441Z","level":"info","message":"🔄 Procesando 8 streams actualmente"}
+{"message":"🟢 Stream stream:location:brx4IqWlCYpGp3qdLXhZ:workflow:babdf350-d4f6-4db2-8d0f-f59624b47baf activado","level":"info","timestamp":"2025-07-28T14:34:30.503177546Z"}
+{"message":"🟢 Stream stream:location:4H6ZW0AZqLvB6TR9Che5:workflow:f460006a-ad3c-4acd-be44-12033556c48c activado","level":"info","timestamp":"2025-07-28T14:34:30.503194004Z"}
+{"timestamp":"2025-07-28T14:34:50.486142750Z","message":"💤 Stream stream:location:gkBdvhVKCWqvMBk0jBU4:workflow:594c5a61-b109-4daf-b367-0e508733c3a4 inactivo por 300s, liberando recursos","level":"info"}
+{"timestamp":"2025-07-28T14:34:50.486156443Z","message":"🔴 Stream stream:location:gkBdvhVKCWqvMBk0jBU4:workflow:594c5a61-b109-4daf-b367-0e508733c3a4 desactivado por inactividad","level":"info"}
+{"level":"info","timestamp":"2025-07-28T14:34:50.486169907Z","message":"💤 Stream stream:location:svq4JFmFmE7CzLQ6kwiD:workflow:cf6faaff-109b-4062-acaf-8383da78597c inactivo por 300s, liberando recursos"}
+{"timestamp":"2025-07-28T14:34:50.486188500Z","message":"🔴 Stream stream:location:svq4JFmFmE7CzLQ6kwiD:workflow:cf6faaff-109b-4062-acaf-8383da78597c desactivado por inactividad","level":"info"}
+{"timestamp":"2025-07-28T14:34:50.486202547Z","message":"💤 Stream stream:location:gkBdvhVKCWqvMBk0jBU4:workflow:57733ebc-fbf9-4881-ada6-8e38e5e79a69 inactivo por 300s, liberando recursos","level":"info"}
+{"message":"🔴 Stream stream:location:gkBdvhVKCWqvMBk0jBU4:workflow:57733ebc-fbf9-4881-ada6-8e38e5e79a69 desactivado por inactividad","timestamp":"2025-07-28T14:34:50.486215451Z","level":"info"}
+{"timestamp":"2025-07-28T14:34:50.486225967Z","level":"info","message":"🔄 Procesando 7 streams actualmente"}
+{"timestamp":"2025-07-28T14:34:50.486239301Z","level":"info","message":"🟢 Stream stream:location:gkBdvhVKCWqvMBk0jBU4:workflow:57733ebc-fbf9-4881-ada6-8e38e5e79a69 activado"}
+{"timestamp":"2025-07-28T14:35:10.484623213Z","level":"info","message":"🔄 Procesando 8 streams actualmente"}
+{"message":"🟢 Stream stream:location:gkBdvhVKCWqvMBk0jBU4:workflow:594c5a61-b109-4daf-b367-0e508733c3a4 activado","level":"info","timestamp":"2025-07-28T14:35:10.484654048Z"}
+{"timestamp":"2025-07-28T14:35:14.747123721Z","message":"💤 Stream stream:location:tF9LFj7x8T8jaAnznN0I:workflow:f6d922fd-7264-4e02-b2f9-23973d29e514 inactivo por 300s, liberando recursos","level":"info"}
+{"level":"info","message":"🔴 Stream stream:location:tF9LFj7x8T8jaAnznN0I:workflow:f6d922fd-7264-4e02-b2f9-23973d29e514 desactivado por inactividad","timestamp":"2025-07-28T14:35:14.747145473Z"}
+{"message":"🔄 Procesando 8 streams actualmente","timestamp":"2025-07-28T14:35:15.615408682Z","level":"info"}
+{"message":"🟢 Stream stream:location:tF9LFj7x8T8jaAnznN0I:workflow:f6d922fd-7264-4e02-b2f9-23973d29e514 activado","timestamp":"2025-07-28T14:35:15.615433170Z","level":"info"}
+{"message":"🟢 Stream stream:location:svq4JFmFmE7CzLQ6kwiD:workflow:cf6faaff-109b-4062-acaf-8383da78597c activado","level":"info","timestamp":"2025-07-28T14:35:15.615452998Z"}
+{"level":"info","message":"🔄 Procesando 10 streams actualmente","timestamp":"2025-07-28T14:35:35.613650925Z"}
+{"level":"info","message":"🔄 Procesando 10 streams actualmente","timestamp":"2025-07-28T14:35:55.583095963Z"}
+{"message":"💤 Stream stream:location:9Vpsyw2NXPYkQsyLUv3R:workflow:275a3a07-cca0-4649-8df5-024b2e75beeb inactivo por 300s, liberando recursos","level":"info","timestamp":"2025-07-28T14:35:59.985870955Z"}
+{"timestamp":"2025-07-28T14:35:59.985885404Z","message":"🔴 Stream stream:location:9Vpsyw2NXPYkQsyLUv3R:workflow:275a3a07-cca0-4649-8df5-024b2e75beeb desactivado por inactividad","level":"info"}
+{"message":"🔄 Procesando 9 streams actualmente","timestamp":"2025-07-28T14:36:00.777601258Z","level":"info"}
+{"level":"info","timestamp":"2025-07-28T14:36:00.777622469Z","message":"🟢 Stream stream:location:9Vpsyw2NXPYkQsyLUv3R:workflow:275a3a07-cca0-4649-8df5-024b2e75beeb activado"}
+{"message":"🔄 Procesando 10 streams actualmente","level":"info","timestamp":"2025-07-28T14:36:20.769783652Z"}
+{"message":"🔄 Procesando 10 streams actualmente","timestamp":"2025-07-28T14:36:40.770324564Z","level":"info"}
+{"timestamp":"2025-07-28T14:36:45.888301531Z","level":"info","message":"🔄 Procesando 10 streams actualmente"}
+{"message":"🔄 Procesando 10 streams actualmente","timestamp":"2025-07-28T14:37:05.899904667Z","level":"info"}
+{"message":"🔄 Procesando 10 streams actualmente","level":"info","timestamp":"2025-07-28T14:37:25.900487736Z"}
+{"timestamp":"2025-07-28T14:37:30.984211109Z","message":"🔄 Procesando 10 streams actualmente","level":"info"}
+{"message":"💤 Stream stream:location:fgK4QNPrkW9TsnxdOLjN:workflow:b1961631-4fd8-4e89-beaa-1033bd13641b inactivo por 300s, liberando recursos","level":"info","timestamp":"2025-07-28T14:37:50.980823606Z"}
+{"timestamp":"2025-07-28T14:37:50.980860855Z","message":"🔴 Stream stream:location:fgK4QNPrkW9TsnxdOLjN:workflow:b1961631-4fd8-4e89-beaa-1033bd13641b desactivado por inactividad","level":"info"}
+{"message":"🔄 Procesando 9 streams actualmente","timestamp":"2025-07-28T14:37:50.980883411Z","level":"info"}
+{"level":"info","timestamp":"2025-07-28T14:37:50.980903052Z","message":"🟢 Stream stream:location:fgK4QNPrkW9TsnxdOLjN:workflow:b1961631-4fd8-4e89-beaa-1033bd13641b activado"}
+{"level":"info","timestamp":"2025-07-28T14:38:10.967589452Z","message":"🔄 Procesando 10 streams actualmente"}
+{"message":"🔄 Procesando 10 streams actualmente","timestamp":"2025-07-28T14:38:16.089607994Z","level":"info"}

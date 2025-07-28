@@ -166,7 +166,7 @@ class StreamManager {
             'GROUP', CONSUMER_GROUP, WORKER_ID, 
             'COUNT', 1, // Procesar de uno en uno para garantizar orden
             'BLOCK', 2000, // Bloquear 2 segundos, luego comprobar estado
-            'STREAMS', streamName, '0' // Usar '0' para PEL en lugar de '>' para evitar duplicados
+            'STREAMS', streamName, '>' // Usar '>' para leer mensajes nuevos
           );
           
           // Si hay mensajes nuevos, procesarlos

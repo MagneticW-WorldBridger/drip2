@@ -47,9 +47,6 @@ async function processReadyContacts() {
           const messageId = await publishToStream(streamName, messageData);
           console.log(`🚀 Contacto ${row.contact_id} publicado en stream ${streamName} con ID ${messageId}`);
           
-          // Eliminar contacto de PostgreSQL
-          await client.query('DELETE FROM sequential_queue WHERE id = $1', [row.id]);
-          console.log(`🗑️ Contacto ${row.contact_id} eliminado de sequential_queue`);
         } catch (error) {
           console.error(`❌ Error procesando contacto ${row.contact_id}:`, error);
           // Continuar con el siguiente contacto
